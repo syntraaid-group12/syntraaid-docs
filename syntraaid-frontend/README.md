@@ -1,8 +1,8 @@
 # Syntraaid Frontend
 
-The web application for **Volunteer_NGO_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The web application for **Syntraaid_Volunteer_NGO_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
-This is the browser-based interface used by NGO Administrators, Project Coordinators, and Donors to manage volunteers, track projects, and generate impact reports.
+This is the browser-based interface built with plain HTML, Tailwind CSS, and Vanilla JavaScript. It is used by NGO Administrators, Project Coordinators, Volunteers, and Donors to manage volunteers, track projects, and generate impact reports.
 
 ---
 
@@ -26,11 +26,11 @@ The frontend provides:
 
 | Layer | Technology |
 |---|---|
-| Framework | React.js |
+| Markup | HTML5 |
 | Styling | Tailwind CSS |
-| State Management | React Context / Redux |
-| HTTP Client | Axios |
-| Routing | React Router |
+| Logic | Vanilla JavaScript |
+| Routing | Custom router in router.js |
+| HTTP Client | Fetch API |
 | Hosting | Vercel (free tier) |
 
 > **Note for contributors:** If the tech stack changes during development, update this table before the Week 4 handoff.
@@ -41,11 +41,12 @@ The frontend provides:
 
 ### Prerequisites
 
-Make sure you have the following installed:
+All you need is:
 
-- Node.js (v18 or higher)
-- npm (comes with Node.js)
+- A code editor (VS Code recommended)
+- A browser (Chrome or Firefox)
 - Git
+- Live Server extension in VS Code (for local development)
 
 ### Installation
 
@@ -56,34 +57,31 @@ git clone https://github.com/syntraaid-group12/syntraaid-frontend.git
 cd syntraaid-frontend
 ```
 
-2. Install dependencies:
+2. Open the project in VS Code:
 
 ```bash
-npm install
+code .
 ```
 
-3. Set up your environment variables (see Environment Variables section below)
+3. Install the **Live Server** extension in VS Code if you haven't already
 
-4. Start the development server:
+4. Right-click on `index.html` and select **"Open with Live Server"**
 
-```bash
-npm start
-```
+The app will open in your browser automatically 
 
-The app will open at `http://localhost:3000`
+> There is no npm install or build step required for this project.
 
 ---
 
 ## Environment Variables
 
-Create a `.env` file in the root of the project and add the following:
+There are no `.env` files on the frontend. The API base URL is configured directly in:
 
 ```
-REACT_APP_API_URL=http://localhost:5000/api
-REACT_APP_ENV=development
+js/config.js
 ```
 
-> **Important:** Never commit your `.env` file to GitHub. It is already listed in `.gitignore`.
+Update the API URL in that file to point to your local or deployed backend.
 
 ---
 
@@ -91,17 +89,17 @@ REACT_APP_ENV=development
 
 ```
 syntraaid-frontend/
-├── public/                  # Static assets and index.html
-├── src/
-│   ├── components/          # Reusable UI components (buttons, cards, modals)
-│   ├── pages/               # Full page views (Dashboard, Projects, Reports)
-│   ├── layouts/             # Shared page layouts per user role
-│   ├── context/             # Global state management
-│   ├── services/            # API call functions
-│   ├── hooks/               # Custom React hooks
-│   └── utils/               # Helper functions and constants
-├── .env.example             # Sample environment variable file
-├── package.json
+├── auth/              # Login and registration pages
+├── admin/             # NGO Admin dashboard and management pages
+├── coordinator/       # Project Coordinator pages
+├── volunteer/         # Volunteer dashboard and task pages
+├── donor/             # Donor dashboard and project view pages
+├── shared/            # Shared components used across all roles
+├── js/
+│   ├── config.js      # API base URL and global configuration
+│   ├── auth.js        # Authentication logic and token handling
+│   ├── api.js         # All API call functions using Fetch API
+│   └── router.js      # Client-side routing logic
 └── README.md
 ```
 
@@ -120,41 +118,33 @@ syntraaid-frontend/
 | Transparency Dashboard | Admin, Coordinator | Activity feed, contribution tracker, volunteer impact summaries |
 | Reports Dashboard | NGO Administrator | KPI charts, project summaries, PDF and CSV export |
 | Donor Home Dashboard | Donor | Funded projects with status indicators and progress highlights |
-| Donor Project Detail | Donor | Program progress, participation indicators, recent activity |
-| Donor Funding Summary | Donor | Program health across funded projects, contact admin option |
-| Donor Project History | Donor | Chronological milestones, participation summaries, progress over time |
 
 ---
 
-## Design System
+## Role-Based Folder Guide
 
-All UI design, wireframes, and high-fidelity prototypes are maintained in Figma by the Design team.
+Each user role has its own folder containing the HTML pages for that role:
 
-- Figma prototype link: *(To be added by the Design Lead at end of Week 2)*
-- Design principles: Simple, Mobile First, Minimal Learning Curve, Clear Visibility
-- All screens are designed mobile-first and adapted for desktop
+- **`auth/`** — Shared login and registration pages used by all roles
+- **`admin/`** — Pages only accessible to the NGO Administrator
+- **`coordinator/`** — Pages for Project Coordinators managing projects and volunteers
+- **`volunteer/`** — Pages for Volunteers viewing tasks and logging attendance
+- **`donor/`** — Read-only pages for Donors viewing funded projects
+- **`shared/`** — Components like navigation bars, modals, and notification panels used across roles
 
 ---
 
 ## Connecting to the Backend
 
-The frontend communicates with the `syntraaid-backend` service via REST API calls. Make sure the backend server is running locally before starting the frontend in development.
+All API calls are made using the Fetch API. The base URL for the backend is set in `js/config.js`.
 
-Set the `REACT_APP_API_URL` in your `.env` file to point to your local backend:
+For local development update `js/config.js` to:
 
+```javascript
+const API_BASE = "http://localhost:5000/api";
 ```
-REACT_APP_API_URL=http://localhost:5000/api
-```
 
-For production, this will point to the deployed backend URL on Railway or Render.
-
----
-
-## Running Tests
-
-```bash
-npm test
-```
+For production update it to the deployed backend URL on Railway or Render.
 
 ---
 

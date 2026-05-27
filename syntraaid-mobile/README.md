@@ -1,6 +1,6 @@
 # Syntraaid Mobile
 
-The mobile application for **Volunteer_NGO_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The mobile application for **Syntraaid_Volunteer_NGO_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This app is designed primarily for volunteers who need quick, on-the-go access to their task assignments, attendance logging, and project updates from their smartphones.
 
@@ -27,7 +27,7 @@ The mobile app provides:
 | Framework | React Native |
 | Navigation | React Navigation |
 | State Management | React Context |
-| HTTP Client | Axios |
+| HTTP Client | Fetch API |
 | Notifications | Expo Notifications |
 | Platform | iOS and Android |
 | Hosting | Expo / EAS Build |
@@ -63,28 +63,33 @@ cd syntraaid-mobile
 npm install
 ```
 
-3. Set up your environment variables (see Environment Variables section below)
-
-4. Start the development server:
+3. Start the development server:
 
 ```bash
 npx expo start
 ```
 
-5. Scan the QR code shown in your terminal with the **Expo Go** app on your phone to open the app
+4. Scan the QR code shown in your terminal with the **Expo Go** app on your phone to open the app
 
 ---
 
-## Environment Variables
+## API Configuration
 
-Create a `.env` file in the root of the project and add the following:
+There are no `.env` files for API configuration on mobile. The backend base URL is set as a constant directly in:
 
 ```
-API_URL=http://your-local-ip:5000/api
-EXPO_PUBLIC_ENV=development
+src/config/api.js
 ```
 
-> **Important:** Use your computer's local IP address (not `localhost`) so your phone can reach the backend server on the same network. Never commit your `.env` file to GitHub.
+The constant is named `API_BASE`. Update it to point to your local or deployed backend:
+
+```javascript
+export const API_BASE = "http://your-backend-url:5000/api";
+```
+
+All API calls throughout the app use the Fetch API and reference this constant.
+
+> **Important:** For local development use your computer's local IP address instead of `localhost` so your phone can reach the backend on the same network.
 
 ---
 
@@ -98,10 +103,10 @@ syntraaid-mobile/
 │   ├── screens/             # Individual app screens
 │   ├── navigation/          # Stack and tab navigation setup
 │   ├── context/             # Global state management
-│   ├── services/            # API call functions
+│   ├── config/
+│   │   └── api.js           # API_BASE constant and configuration
 │   └── utils/               # Helper functions and constants
 ├── app.json                 # Expo configuration
-├── .env.example             # Sample environment variable file
 ├── package.json
 └── README.md
 ```
@@ -130,20 +135,6 @@ The app sends push notifications to volunteers for:
 - Project updates from their coordinator
 
 Users can manage notification preferences within the app settings.
-
----
-
-## Connecting to the Backend
-
-The mobile app communicates with the `syntraaid-backend` service via REST API calls.
-
-For local development, set the `API_URL` in your `.env` file to your computer's local IP address and the backend port:
-
-```
-API_URL=http://192.168.x.x:5000/api
-```
-
-For production, this will point to the deployed backend URL on Railway or Render.
 
 ---
 

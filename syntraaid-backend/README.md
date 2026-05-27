@@ -1,6 +1,6 @@
 # Syntraaid Backend
 
-The server-side application for **Volunteer_NGO_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The server-side application for **Syntraaid_Volunteer_NGO_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This service handles all business logic, data storage, authentication, and API endpoints that power the web and mobile frontends.
 
@@ -27,7 +27,7 @@ The backend is responsible for:
 |---|---|
 | Runtime | Node.js |
 | Framework | Express.js |
-| Database | PostgreSQL |
+| Database | MongoDB Atlas |
 | Authentication | JWT (JSON Web Tokens) |
 | File Export | PDF and CSV generation libraries |
 | Hosting | Railway / Render (free tier) |
@@ -44,8 +44,8 @@ Make sure you have the following installed before running the project:
 
 - Node.js (v18 or higher)
 - npm (comes with Node.js)
-- PostgreSQL (v14 or higher)
 - Git
+- A MongoDB Atlas account and cluster
 
 ### Installation
 
@@ -64,13 +64,7 @@ npm install
 
 3. Set up your environment variables (see Environment Variables section below)
 
-4. Set up the database:
-
-```bash
-npm run db:migrate
-```
-
-5. Start the development server:
+4. Start the development server:
 
 ```bash
 npm run dev
@@ -86,7 +80,7 @@ Create a `.env` file in the root of the project and add the following:
 
 ```
 PORT=5000
-DATABASE_URL=your_postgresql_connection_string
+MONGO_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your_jwt_secret_key
 EMAIL_SERVICE=your_email_service_api_key
 NODE_ENV=development
@@ -100,17 +94,12 @@ NODE_ENV=development
 
 ```
 syntraaid-backend/
-├── src/
-│   ├── controllers/       # Handles incoming requests and responses
-│   ├── routes/            # Defines all API endpoint paths
-│   ├── models/            # Database schema and queries
-│   ├── middleware/        # Authentication and role-based access checks
-│   ├── services/          # Business logic (reports, notifications, etc.)
-│   └── utils/             # Helper functions
-├── database/
-│   └── migrations/        # Database setup and versioning scripts
-├── tests/                 # Automated tests
-├── .env.example           # Sample environment variable file
+├── config/            # Database connection and app configuration
+├── constants/         # Reusable constant values used across the app
+├── middleware/        # Authentication and role-based access checks
+├── models/            # MongoDB data models and schemas
+├── routes/            # API endpoint definitions and route handlers
+├── .env.example       # Sample environment variable file
 ├── package.json
 └── README.md
 ```
@@ -148,17 +137,17 @@ Full API documentation is maintained separately in the `syntraaid-docs` reposito
 
 ---
 
-## Database Schema
+## MongoDB Collections
 
-Core tables in the database:
+Core collections in the database:
 
 - `users` — All user accounts and roles
 - `volunteers` — Volunteer profiles, skills, and availability
 - `projects` — Projects with goals, milestones, and timelines
 - `tasks` — Tasks linked to projects and assigned to volunteers
 - `assignments` — Records linking volunteers to projects
-- `attendance_logs` — Individual attendance and hour entries
-- `activity_logs` — Tamper-proof record of all significant system events
+- `attendancelogs` — Individual attendance and hour entries
+- `activitylogs` — Tamper-proof record of all significant system events
 - `notifications` — In-app and email notification records
 
 ---
