@@ -1,6 +1,6 @@
 # Syntraaid Frontend
 
-The web application for **SyntraAid_NGO_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The web application for **SyntraAid** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This is the browser-based interface built with plain HTML, Tailwind CSS, and Vanilla JavaScript. It is used by NGO Administrators, Project Coordinators, Volunteers, and Donors to manage volunteers, track projects, and generate impact reports.
 
@@ -175,7 +175,7 @@ Before the capstone demonstration, the following must pass on the web applicatio
 
 | Detail | Info |
 |---|---|
-| Product | SytraAid_NGO_App |
+| Product | SyntraAid |
 | Group | Group 12 — Capstone 2026 |
 | Track | Frontend Development |
 | Deadline | End of Week 3 |

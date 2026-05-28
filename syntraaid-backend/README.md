@@ -1,6 +1,6 @@
 # Syntraaid Backend
 
-The server-side application for **SyntraAid_NGO_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The server-side application for **SyntraAid** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This service handles all business logic, data storage, authentication, and API endpoints that power the web and mobile frontends.
 
@@ -161,7 +161,7 @@ npm test
 
 Before the capstone demonstration, the following must pass:
 
-- All five user roles can log in and see only their permitted views
+- All four user roles can log in and see only their permitted views
 - Volunteers can be searched by skill and assigned to a project
 - A project can be created and tracked through to completion
 - Attendance entries are saved correctly and cumulative totals are accurate
@@ -185,7 +185,7 @@ Before the capstone demonstration, the following must pass:
 
 | Detail | Info |
 |---|---|
-| Product | Volunteer_NGO_App |
+| Product | SyntraAid |
 | Group | Group 12 — Capstone 2026 |
 | Track | Backend Development |
 | Deadline | End of Week 3 |

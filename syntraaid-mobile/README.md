@@ -1,6 +1,6 @@
 # Syntraaid Mobile
 
-The mobile application for **SyntraAid_NGO_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The mobile application for **SyntraAid** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This app is designed primarily for volunteers who need quick, on-the-go access to their task assignments, attendance logging, and project updates from their smartphones.
 
@@ -173,7 +173,7 @@ Before the capstone demonstration, the following must pass on a real mobile devi
 
 | Detail | Info |
 |---|---|
-| Product | SyntraAid_NGO_App |
+| Product | SyntraAid |
 | Group | Group 12 — Capstone 2026 |
 | Track | Mobile Development |
 | Deadline | End of Week 3 |
