@@ -141,6 +141,75 @@ Reports in SyntraAid give you a structured summary of activity across the platfo
 
 ---
 
+### Before Generating Any Report
+
+Please verify the following before generating a report:
+
+- Attendance records are complete
+- Project milestone progress is updated
+- Task completion data is accurate
+- Volunteer participation records are correct
+
+---
+
+### How to Generate an Impact Report
+
+1. From the Admin Dashboard, click **Reports** in the navigation menu.
+2. Select **Impact Report** as the report type.
+3. Select a project or date range using the filter options.
+4. Click **Generate Report**.
+5. Review the report on screen.
+6. Click **Export** and choose **PDF** to download.
+
+The Impact Report includes:
+- Project progress summaries
+- Volunteer activity summaries
+- Task completion information
+- Attendance contribution data
+- Project milestone progress
+
+---
+
+### How to Generate an Attendance Export
+
+1. From the Admin Dashboard, click **Reports** in the navigation menu.
+2. Select **Attendance Export** as the report type.
+3. Select a project or date range using the filter options.
+4. Click **Generate Report**.
+5. Review the report on screen.
+6. Click **Export** and choose **PDF** or **CSV** to download.
+
+The Attendance Export includes:
+- Attendance records
+- Volunteer hours logged
+- Participation records
+- Project attendance summaries
+
+---
+
+### How to Generate a KPI Summary
+
+1. From the Admin Dashboard, click **Reports** in the navigation menu.
+2. Select **KPI Summary** as the report type.
+3. Select a project or reporting range using the filter options.
+4. Click **Generate Report**.
+5. Review the KPI information on screen.
+6. Click **Export** and choose **PDF** or **CSV** to download.
+
+The KPI Summary includes:
+- Total volunteers
+- Total hours logged
+- Task completion rates
+- Project status information
+
+---
+
+### Report Generation Requirement
+
+Impact report generation must complete within two minutes of clicking Generate Report.
+
+---
+
 ## Section 5: Managing Donor Access
 
 Donors on SyntraAid have a restricted view of the platform. They can only see what you allow them to see. It is your responsibility as an Administrator to manage these settings carefully.
