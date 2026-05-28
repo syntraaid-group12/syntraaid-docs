@@ -23,7 +23,7 @@ The product is considered ready for demonstration only after all criteria below 
 | Transparency Dashboard      | The dashboard displays activity feed updates, contribution tracking, timestamps, and volunteer impact summaries. | Dashboard activity verification             |
 | Reporting and Impact Export | The system generates donor-ready reports with KPI summaries and supports PDF and CSV export.                     | Timed export generation test                |
 | Notifications               | Volunteers receive task assignment notifications and coordinators receive blocked task alerts.                   | Notification delivery verification          |
-| Mobile Access               | Volunteers and coordinators can access core project and task functions on mobile devices.                        | Mobile device walkthrough                   |
+| Mobile Access               | Volunteers can access tasks, attendance logging, and notifications on mobile devices.                            | Mobile device walkthrough                   |
 | Donor Dashboard Access      | Donors can access only projects linked to their funded programs.                                                 | Donor access restriction test               |
 | Donor Project Visibility    | Donors can view project progress summaries and impact indicators for funded projects.                            | Donor dashboard review walkthrough          |
 | Donor Funding Summary       | Donors can review overall programme health and project progress indicators.                                      | Funding summary verification                |
