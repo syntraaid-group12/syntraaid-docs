@@ -2,120 +2,171 @@
 
 ## Introduction
 
-Welcome to SyntraAid, a volunteer management platform designed to help volunteers connect with nonprofit organizations, manage tasks, track attendance, and stay updated on activities and events.
+SyntraAid is a volunteer coordination platform designed to help volunteers manage assigned tasks, log attendance hours, and track contribution records within NGO projects.
 
-This manual provides a step-by-step guide for volunteers using the SyntraAid platform.
-
----
-
-# Getting Started
-
-## Creating an Account
-
-1. Open the SyntraAid application.
-2. Click on the “Sign Up” button.
-3. Enter your personal details:
-   - Full Name
-   - Email Address
-   - Password
-4. Click “Create Account”.
-
-## Logging In
-
-1. Open the application.
-2. Enter your email and password.
-3. Click “Login”.
+This manual explains how volunteers use the platform based on the implemented system workflow and approved project requirements.
 
 ---
 
-# Completing Your Profile
+# 1. Volunteer Invitation and Account Creation
 
-After logging in, volunteers can complete their profile by:
+Volunteers do not self-register on the platform.
 
-1. Uploading a profile picture.
-2. Adding contact information.
-3. Selecting volunteer interests.
-4. Saving profile changes.
+An NGO administrator sends an invitation link to the volunteer email address.
 
-Keeping your profile updated helps coordinators assign suitable tasks.
+## Steps to Create an Account
 
----
-
-# Understanding the Dashboard
-
-The volunteer dashboard provides access to:
-
-- Assigned Tasks
-- Attendance Records
-- Notifications
-- Events
-- Profile Settings
-
-The dashboard helps volunteers easily manage their activities in one place.
+1. Open the invitation link sent by the administrator.
+2. Create a password.
+3. Submit the registration form.
+4. Access the volunteer dashboard after account creation is completed.
 
 ---
 
-# Managing Tasks
+# 2. Volunteer Profile Setup
+
+After account creation, volunteers complete their profile information.
+
+## Profile Fields
+
+The volunteer profile contains the following fields:
+
+- First Name
+- Last Name
+- Bio
+- Skills
+- Available Days
+- Available Times
+
+## Updating Profile Information
+
+1. Open the Profile section from the navigation menu.
+2. Edit the required profile fields.
+3. Save the updated information.
+
+The saved information is used by coordinators when assigning volunteers to projects.
+
+---
+
+# 3. Volunteer Dashboard
+
+The Volunteer Dashboard provides access to assigned work and participation records.
+
+## Dashboard Sections
+
+The dashboard contains:
+
+- Assigned tasks
+- Personal hours summary
+- Participation history
+- Recognition panel
+
+Volunteers use the dashboard to monitor assigned responsibilities and contribution records.
+
+---
+
+# 4. Task Management
+
+Volunteers receive assigned tasks from project coordinators.
 
 ## Viewing Assigned Tasks
 
-1. Navigate to the “Tasks” section.
-2. View all assigned volunteer activities.
-3. Click on a task to see more details.
+1. Open the dashboard.
+2. Select an assigned task.
+3. Review the task description and due date.
 
 ## Updating Task Status
 
-Volunteers can:
-- Mark tasks as completed
-- Track progress
-- View deadlines
+Volunteers can update task progress using the available status options:
+
+- Not Started
+- In Progress
+- Blocked
+- Completed
+
+## Task Details Page
+
+The task detail page contains:
+
+- Task description
+- Status selector
+- Notes input
+- Due date
+- Assignees
 
 ---
 
-# Attendance Tracking
+# 5. Attendance Logging
+
+Attendance is logged against projects.
 
 ## Logging Attendance
 
-1. Open the Attendance section.
-2. Select the assigned event or activity.
-3. Click “Mark Attendance”.
+1. Open the Attendance screen.
+2. Select a project.
+3. Enter hours worked.
+4. Submit the attendance entry.
 
-## Viewing Attendance History
+## Attendance Screen Elements
 
-Volunteers can review:
-- Previous attendance records
-- Participation history
-- Event attendance details
+The attendance screen contains:
 
----
+- Date field
+- Hours input
+- Project selector
+- Cumulative total display
 
-# Notifications
-
-The notification section keeps volunteers updated about:
-
-- New tasks
-- Upcoming events
-- Announcements
-- Attendance reminders
+Submitted attendance records contribute to the volunteer participation history and cumulative hours record.
 
 ---
 
-# Mobile Access
+# 6. Notifications
 
-SyntraAid is accessible on mobile devices, allowing volunteers to:
+Volunteers receive notifications related to assigned work and deadlines.
 
-- Receive updates on the go
-- Track activities
-- Manage tasks easily
+## Notification Types
+
+The system provides:
+
+- In-app notifications
+- Email alerts
+- Deadline reminders
+
+Notifications help volunteers monitor task progress and participation activity.
 
 ---
 
-# Support
+# 7. Participation History and Contribution Records
 
-For support or technical assistance, contact the SyntraAid support team.
+SyntraAid maintains a participation history for each volunteer.
+
+The participation record includes:
+
+- Logged attendance hours
+- Assigned projects
+- Completed tasks
+- Contribution history
+
+Volunteers can review their recorded activity from the dashboard.
 
 ---
 
-# Conclusion
+# 8. Recognition Panel
 
-Thank you for volunteering with SyntraAid. Your contributions help create positive impact in communities.
+The dashboard contains a recognition panel that displays volunteer contribution milestones.
+
+Recognition information is based on participation history and recorded contribution activity.
+
+---
+
+# 9. Mobile Volunteer Flow
+
+The volunteer workflow supports mobile-first usage.
+
+The mobile volunteer flow includes:
+
+- Task list access
+- Attendance check-in
+- Notifications
+
+This allows volunteers to manage participation activities from mobile devices.
