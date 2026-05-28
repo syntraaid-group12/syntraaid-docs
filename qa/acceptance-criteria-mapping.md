@@ -1,89 +1,159 @@
 # SyntraAid Acceptance Criteria Mapping Document
 
-## Introduction
+## Overview
 
-This document maps product requirements to acceptance criteria and testing outcomes for the SyntraAid platform.
+This document maps SyntraAid product requirements to measurable acceptance criteria and verification methods.
 
-It helps QA teams, Product Managers, and Developers confirm that implemented features meet expected business and functional requirements.
+Each acceptance criterion is based on the approved PRD, user flows, dashboard structure, and MVP feature requirements.
 
----
-
-# Feature Mapping Overview
-
-| Feature | Acceptance Criteria | Test Scenario | Expected Result |
-|--------|---------------------|---------------|----------------|
-| User Registration | Users must create accounts successfully | User submits registration form | Account created successfully |
-| User Login | Registered users can log in securely | User enters correct credentials | User redirected to dashboard |
-| Volunteer Dashboard | Volunteers can access assigned tasks | Volunteer logs into dashboard | Assigned tasks displayed |
-| Attendance Tracking | Volunteers can mark attendance | Volunteer clicks attendance button | Attendance saved successfully |
-| Event Management | Coordinators can create events | Coordinator submits event form | Event created successfully |
-| Notifications | Users receive platform notifications | New task/event created | Notification appears |
-| Reporting Export | Coordinators can export reports | User clicks export button | PDF/CSV report downloaded |
+The product is considered ready for demonstration only after all criteria below are verified successfully.
 
 ---
 
-# Verification Method
+# Acceptance Criteria Mapping
 
-Acceptance criteria are verified through:
-
-- Functional testing
-- Manual QA review
-- User acceptance testing (UAT)
-- Feature walkthroughs
-- Demo validation sessions
-
----
-
-# Pass and Fail Conditions
-
-## Pass Criteria
-
-A feature passes when:
-
-- All required actions work correctly
-- UI behaves as expected
-- No critical bugs are found
-- Data saves successfully
-- Expected outputs are generated
-
-## Fail Criteria
-
-A feature fails when:
-
-- Core functionality breaks
-- Errors prevent task completion
-- Incorrect data is displayed
-- Export/report generation fails
-- Notifications or workflows do not function properly
+| Feature Area                | Acceptance Criteria                                                                                              | Verification Method                         |
+| --------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| Authentication              | All user roles can log in and access only the views and actions permitted for their role.                        | Manual role-based access test               |
+| Volunteer Management        | Coordinators can search volunteers by skill and availability and assign them to projects.                        | End-to-end volunteer assignment walkthrough |
+| Volunteer Hours             | Volunteer profile contribution totals match submitted attendance records.                                        | Verify cumulative attendance totals         |
+| Project Management          | Coordinators can create projects with goals, milestones, timelines, and status tracking.                         | Full project lifecycle walkthrough          |
+| Task Tracking               | Coordinators can create, assign, update, and complete tasks.                                                     | End-to-end task management test             |
+| Attendance Logging          | Volunteers can submit attendance records by selecting a project and entering hours worked.                       | Attendance submission and verification test |
+| Transparency Dashboard      | The dashboard displays activity feed updates, contribution tracking, timestamps, and volunteer impact summaries. | Dashboard activity verification             |
+| Reporting and Impact Export | The system generates donor-ready reports with KPI summaries and supports PDF and CSV export.                     | Timed export generation test                |
+| Notifications               | Volunteers receive task assignment notifications and coordinators receive blocked task alerts.                   | Notification delivery verification          |
+| Mobile Access               | Volunteers and coordinators can access core project and task functions on mobile devices.                        | Mobile device walkthrough                   |
+| Donor Dashboard Access      | Donors can access only projects linked to their funded programs.                                                 | Donor access restriction test               |
+| Donor Project Visibility    | Donors can view project progress summaries and impact indicators for funded projects.                            | Donor dashboard review walkthrough          |
+| Donor Funding Summary       | Donors can review overall programme health and project progress indicators.                                      | Funding summary verification                |
 
 ---
 
-# QA Review Checklist
+# Verification Scenarios
 
-QA reviewers should confirm:
+## Authentication Verification
 
-- Requirements are implemented correctly
-- User flows work properly
-- Error handling functions correctly
-- Dashboard data displays accurately
-- Exported reports contain correct information
+### Expected Result
 
----
+* Users can log in successfully.
+* Users only see role-permitted dashboards and actions.
 
-# Demo Proof Points
+### Pass Condition
 
-The following proof points may be demonstrated during reviews:
+Role restrictions function correctly for:
 
-- Successful account creation
-- Volunteer task assignment
-- Attendance logging
-- Event creation workflow
-- Notification delivery
-- Successful PDF/CSV export
-- Dashboard reporting visibility
+* Volunteer
+* Coordinator
+* NGO Administrator
+* Donor
 
 ---
 
-# Conclusion
+## Volunteer Assignment Verification
 
-This acceptance criteria mapping document ensures that SyntraAid features align with product requirements and expected user outcomes.
+### Expected Result
+
+* Coordinators can locate volunteers using the searchable roster.
+* Volunteers can be assigned to projects successfully.
+
+### Pass Condition
+
+* Assigned volunteers appear within the project workspace immediately after assignment.
+
+---
+
+## Task Management Verification
+
+### Expected Result
+
+* Tasks can be created and assigned.
+* Task status updates appear in real time.
+
+### Pass Condition
+
+* Coordinators can monitor all task progress from the task board.
+
+---
+
+## Attendance Verification
+
+### Expected Result
+
+* Volunteers submit attendance entries against projects.
+* Attendance records store hours worked and optional notes.
+
+### Pass Condition
+
+* Attendance totals update correctly within contribution tracking.
+
+---
+
+## Reporting Verification
+
+### Expected Result
+
+* KPI summaries are generated successfully.
+* Reports export correctly in PDF and CSV formats.
+
+### Pass Condition
+
+* Report generation completes within two minutes.
+
+---
+
+## Donor Dashboard Verification
+
+### Expected Result
+
+* Donors can view funded project progress and impact summaries.
+* Donors cannot access unrelated projects.
+
+### Pass Condition
+
+* Dashboard visibility matches assigned donor permissions.
+
+---
+
+# Pass and Fail Criteria
+
+## Pass
+
+The product passes acceptance testing when:
+
+* All mapped features operate successfully
+* Role permissions function correctly
+* Project and task flows complete without failure
+* Attendance records calculate accurately
+* Dashboard data updates correctly
+* Reporting exports successfully
+* Donor visibility restrictions operate correctly
+
+---
+
+## Fail
+
+The product fails acceptance testing if:
+
+* Users access unauthorized areas
+* Task or attendance data is lost or inaccurate
+* Reporting exports fail
+* Dashboard activity does not update correctly
+* Donor visibility restrictions fail
+* Core project workflows cannot be completed
+
+---
+
+# Demonstration Evidence
+
+The following evidence should be prepared before the capstone demonstration:
+
+* Role-based login walkthrough
+* Volunteer assignment demonstration
+* Project lifecycle walkthrough
+* Task tracking demonstration
+* Attendance logging verification
+* Transparency dashboard walkthrough
+* Report export demonstration
+* Donor dashboard access verification
+* Mobile access walkthrough
