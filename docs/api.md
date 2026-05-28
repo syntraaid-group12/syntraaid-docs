@@ -1,3 +1,4 @@
+
 # SyntraAid API Documentation
 
 **Group 12 | Capstone 2026**
@@ -219,11 +220,7 @@ Sends a password reset link to the user's email address.
 }
 ```
 
-**Error Responses:**
-
-| Status Code | Meaning |
-|---|---|
-| 404 | Email not found |
+> **Security Note:** This endpoint always returns 200 regardless of whether the email exists in the system. This prevents user enumeration attacks.
 
 ---
 
@@ -890,7 +887,7 @@ Base path: `/api/attendance`
 
 These endpoints manage volunteer attendance logs.
 
-> ⚠️ **INSERT ONLY** — Attendance records can never be edited or deleted. There are no PUT, PATCH, or DELETE endpoints for attendance. See Important Rules section.
+> **INSERT ONLY** — Attendance records can never be edited or deleted. There are no PUT, PATCH, or DELETE endpoints for attendance. See Important Rules section.
 
 ---
 
@@ -1247,7 +1244,7 @@ Base path: `/api/donors`
 
 These endpoints manage donor access to funded projects.
 
-> ⚠️ Donor responses never include volunteer personal contact details such as email addresses or phone numbers.
+> Donor responses never include volunteer personal contact details such as email addresses or phone numbers.
 
 ---
 
