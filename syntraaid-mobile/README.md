@@ -1,6 +1,6 @@
-# Syntraaid Mobile
+# SyntraAid Mobile
 
-The mobile application for **Syntraaid_Volunteer_NGO_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The mobile application for **SyntraAid_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This app is designed primarily for volunteers who need quick, on-the-go access to their task assignments, attendance logging, and project updates from their smartphones.
 
@@ -13,8 +13,8 @@ The mobile app provides:
 - A simple login flow for volunteers and project coordinators
 - A personal task list showing all assigned tasks with due dates and status
 - Task detail view where volunteers can update their progress
-- Attendance check-in and hour logging after each volunteer session
-- Push notifications for new task assignments and upcoming deadlines
+- Attendance Logging and hour logging after each volunteer session
+- in-app notifications for new task assignments and upcoming deadlines
 - A personal impact summary showing total hours and project contributions
 - Project progress updates for coordinators on the move
 
@@ -96,7 +96,7 @@ All API calls throughout the app use the Fetch API and reference this constant.
 ## Folder Structure
 
 ```
-syntraaid-mobile/
+syntraAid-mobile/
 ├── assets/                  # Images, icons, and fonts
 ├── src/
 │   ├── components/          # Reusable UI components
@@ -120,7 +120,7 @@ syntraaid-mobile/
 | Login | Volunteer, Coordinator | Simple login with email and password |
 | Task List | Volunteer | All assigned tasks with status and due dates |
 | Task Detail | Volunteer | Full task description, status update, and notes |
-| Attendance Check-In | Volunteer, Coordinator | Log date, hours, and project for each session |
+| Attendance Logging | Volunteer, Coordinator | Log date, hours, and project for each session |
 | Notifications | Volunteer | In-app alerts for task assignments and deadlines |
 | Personal Summary | Volunteer | Total hours logged, projects contributed to, recognition earned |
 
@@ -128,7 +128,7 @@ syntraaid-mobile/
 
 ## Notifications
 
-The app sends push notifications to volunteers for:
+The app sends in-app notifications to volunteers for:
 
 - New task assignments — delivered within 60 seconds of assignment
 - Deadline reminders — sent 24 hours before a task is due
@@ -172,7 +172,7 @@ Before the capstone demonstration, the following must pass on a real mobile devi
 
 | Detail | Info |
 |---|---|
-| Product | Volunteer_NGO_App |
+| Product | SyntraAid_App |
 | Group | Group 12 — Capstone 2026 |
 | Track | Mobile Development |
 | Deadline | End of Week 3 |

@@ -1,6 +1,6 @@
-# Syntraaid Backend
+# SyntraAid Backend
 
-The server-side application for **Syntraaid_Volunteer_NGO_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The server-side application for **SyntraAid_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This service handles all business logic, data storage, authentication, and API endpoints that power the web and mobile frontends.
 
@@ -17,7 +17,7 @@ The backend is responsible for:
 - Generating impact reports and exporting them as PDF or CSV
 - Serving the Transparency Dashboard with tamper-proof activity logs
 - Powering the Donor Dashboard with funded project visibility
-- Sending in-app and email notifications for task assignments and deadlines
+- Sending in-app notifications for task assignments and deadlines
 
 ---
 
@@ -93,7 +93,7 @@ NODE_ENV=development
 ## Folder Structure
 
 ```
-syntraaid-backend/
+syntraAid-backend/
 ├── config/            # Database connection and app configuration
 ├── constants/         # Reusable constant values used across the app
 ├── middleware/        # Authentication and role-based access checks
@@ -119,9 +119,9 @@ The backend exposes REST API endpoints across the following modules:
 | Attendance | `/api/attendance` | Log hours, view history, export |
 | Reports | `/api/reports` | KPI dashboard, PDF and CSV export |
 | Donors | `/api/donors` | Donor dashboard, funded project views |
-| Notifications | `/api/notifications` | In-app and email alerts |
+| Notifications | `/api/notifications` | In-app notifications |
 
-Full API documentation is maintained separately in the `syntraaid-docs` repository.
+Full API documentation is maintained separately in the `syntraAid-docs` repository.
 
 ---
 
@@ -148,7 +148,7 @@ Core collections in the database:
 - `assignments` — Records linking volunteers to projects
 - `attendancelogs` — Individual attendance and hour entries
 - `activitylogs` — Tamper-proof record of all significant system events
-- `notifications` — In-app and email notification records
+- `notifications` — In-app notification records
 
 ---
 
@@ -188,7 +188,7 @@ Before the capstone demonstration, the following must pass:
 
 | Detail | Info |
 |---|---|
-| Product | Volunteer_NGO_App |
+| Product | SyntraAid_App |
 | Group | Group 12 — Capstone 2026 |
 | Track | Backend Development |
 | Deadline | End of Week 3 |
