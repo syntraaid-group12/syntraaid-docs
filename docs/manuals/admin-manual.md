@@ -41,13 +41,10 @@ When you log into SyntraAid, you are taken directly to the Admin Dashboard. This
 Summary Cards at the Top
 
 These cards give you a quick overview of the system at a glance:
-
-<<<<<<< HEAD
 - Total Projects
 - Total Volunteers
 - Tasks Completed
 - Reports Generated
-
 
 **Navigation Menu**
 On the left side of the screen (or accessible via the menu icon on smaller screens), you will find links to all admin sections:
