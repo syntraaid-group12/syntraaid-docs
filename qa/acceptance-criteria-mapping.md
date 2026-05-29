@@ -12,21 +12,21 @@ The product is considered ready for demonstration only after all criteria below 
 
 # Acceptance Criteria Mapping
 
-| Feature Area                | Acceptance Criteria                                                                                              | Verification Method                         |
-| --------------------------- | ---------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
-| Authentication              | All user roles can log in and access only the views and actions permitted for their role.                        | Manual role-based access test               |
-| Volunteer Management        | Coordinators can search volunteers by skill and availability and assign them to projects.                        | End-to-end volunteer assignment walkthrough |
-| Volunteer Hours             | Volunteer profile contribution totals match submitted attendance records.                                        | Verify cumulative attendance totals         |
-| Project Management          | Coordinators can create projects with goals, milestones, timelines, and status tracking.                         | Full project lifecycle walkthrough          |
-| Task Tracking               | Coordinators can create, assign, update, and complete tasks.                                                     | End-to-end task management test             |
-| Attendance Logging          | Volunteers can submit attendance records by selecting a project and entering hours worked.                       | Attendance submission and verification test |
-| Transparency Dashboard      | The dashboard displays activity feed updates, contribution tracking, timestamps, and volunteer impact summaries. | Dashboard activity verification             |
-| Reporting and Impact Export | The system generates donor-ready reports with KPI summaries and supports PDF and CSV export.                     | Timed export generation test                |
-| Notifications               | Volunteers receive task assignment notifications and coordinators receive blocked task alerts.                   | Notification delivery verification          |
-| Mobile Access               | Volunteers can access tasks, attendance logging, and notifications on mobile devices.                            | Mobile device walkthrough                   |
-| Donor Dashboard Access      | Donors can access only projects linked to their funded programs.                                                 | Donor access restriction test               |
-| Donor Project Visibility    | Donors can view project progress summaries and impact indicators for funded projects.                            | Donor dashboard review walkthrough          |
-| Donor Funding Summary       | Donors can review overall programme health and project progress indicators.                                      | Funding summary verification                |
+| Feature Area                | Acceptance Criteria                                                                                                                                             | Verification Method                         |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------- |
+| Authentication              | All user roles can log in and access only the views and actions permitted for their role.                                                                       | Manual role-based access test               |
+| Volunteer Management        | Coordinators can search volunteers by skill and availability and assign them to projects.                                                                       | End-to-end volunteer assignment walkthrough |
+| Volunteer Hours             | Volunteer profile contribution totals match submitted attendance records.                                                                                       | Verify cumulative attendance totals         |
+| Project Management          | Coordinators can create projects with goals, milestones, timelines, and status tracking.                                                                        | Full project lifecycle walkthrough          |
+| Task Tracking               | Coordinators can create, assign, update, and complete tasks.                                                                                                    | End-to-end task management test             |
+| Attendance Logging          | Volunteers can submit attendance records by selecting a project and entering hours worked.                                                                      | Attendance submission and verification test |
+| Transparency Dashboard      | The dashboard displays activity feed updates, contribution tracking, timestamps, and volunteer impact summaries.                                                | Dashboard activity verification             |
+| Reporting and Impact Export | The system generates donor-ready reports with KPI summaries and supports PDF and CSV export.                                                                    | Timed export generation test                |
+| Notifications               | Volunteers receive task assignment notifications and deadline reminders, while coordinators receive blocked task alerts and milestone completion notifications. | Notification delivery verification          |
+| Mobile Access               | Volunteers can access tasks, attendance logging, and notifications on mobile devices.                                                                           | Mobile device walkthrough                   |
+| Donor Dashboard Access      | Donors can access only projects linked to their funded programs.                                                                                                | Donor access restriction test               |
+| Donor Project Visibility    | Donors can view project progress summaries and impact indicators for funded projects.                                                                           | Donor dashboard review walkthrough          |
+| Donor Funding Summary       | Donors can review overall programme health and project progress indicators.                                                                                     | Funding summary verification                |
 
 ---
 
