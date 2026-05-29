@@ -41,10 +41,10 @@ When you log into SyntraAid, you are taken directly to the Admin Dashboard. This
 **Summary Cards at the Top**
 These cards give you a quick overview of the system at a glance:
 
-- Total number of active users
-- Total number of ongoing projects
-- Total volunteer hours logged across all projects
-- Total number of donors with active access
+- Total Projects
+- Total Volunteers
+- Tasks Completed
+- Reports Generated
 
 **Navigation Menu**
 On the left side of the screen (or accessible via the menu icon on smaller screens), you will find links to all admin sections:
@@ -69,9 +69,10 @@ All new users on SyntraAid must be invited by an Administrator. Users cannot sig
 2. Click the **Invite User** button.
 3. Enter the new user's **email address**.
 4. Select their **role** from the dropdown. The available roles are:
-   - Coordinator
-   - Volunteer
-   - Donor
+- Admin
+- Coordinator
+- Volunteer
+- Donor
 5. Click **Send Invitation**.
 
 The user will receive an email with a link to complete their registration. Once they accept the invitation and set up their profile, they will appear in your users list.

@@ -99,7 +99,8 @@ Use the navigation menu to move between sections of the platform:
 - **Projects** — A full list of your funded projects
 - **Funding Summary** — A breakdown of how your funding has been applied
 - **Project History** — Completed and archived projects
-
+- **Notifications**
+- **Settings**
 ---
 
 ## Section 4: Viewing a Project in Detail
