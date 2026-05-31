@@ -1,0 +1,228 @@
+# SyntraAid Donor User Manual
+
+**Version:** MVP v1.0
+**Audience:** Donors and Funding Managers
+**Project:** SyntraAid | Group 12 | Capstone 2026
+
+---
+
+## Table of Contents
+
+1. [Welcome](#section-1-welcome)
+2. [Logging In](#section-2-logging-in)
+3. [Your Home Dashboard](#section-3-your-home-dashboard)
+4. [Viewing a Project in Detail](#section-4-viewing-a-project-in-detail)
+5. [The Funding Summary](#section-5-the-funding-summary)
+6. [Project History](#section-6-project-history)
+7. [Privacy and Data](#section-7-privacy-and-data)
+
+---
+
+## Section 1: Welcome
+
+Welcome to SyntraAid.
+
+SyntraAid is a project and volunteer management platform designed to help organisations coordinate their work and demonstrate the impact of that work to their funding partners.
+
+As a donor, your access to SyntraAid gives you a clear, organised view of the projects your funding supports. You can track project progress, review volunteer participation, and see how your contributions are being applied — all in one place, without needing to request individual updates.
+
+This manual will guide you through every part of your SyntraAid experience. If you encounter any difficulty or have questions not covered here, please contact your organisation's administrator.
+
+---
+
+## Section 2: Logging In
+
+### How to Access SyntraAid
+
+SyntraAid is accessed through your web browser. You do not need to install any software.
+
+1. Open your preferred web browser (Chrome, Firefox, Safari, or Edge).
+2. Go to the SyntraAid web address provided to you by your administrator.
+3. You will see the SyntraAid login page.
+
+### How to Log In
+
+1. Enter the **email address** your invitation was sent to.
+2. Enter your **password**.
+3. Click **Log In**.
+
+You will be taken directly to your donor dashboard.
+
+---
+
+### If You Have Forgotten Your Password
+
+1. On the login page, click **Forgot Password?**
+2. Enter your email address and click **Send Reset Link**.
+3. Check your inbox for an email from SyntraAid.
+4. Click the link in the email and follow the instructions to create a new password.
+
+> If you do not receive the reset email within a few minutes, please check your spam or junk folder. If the issue persists, contact your administrator.
+
+---
+
+### First-Time Login
+
+If this is your first time logging in, you would have received an invitation email from SyntraAid. Click the link in that email to set up your password, then log in as described above.
+
+---
+
+## Section 3: Your Home Dashboard
+
+After logging in, you will arrive at your Home Dashboard. This is your main view of all activity related to your funded projects.
+
+### What You Will See
+
+**Active Projects Panel**
+This panel shows all projects that are currently in progress and linked to your funding. Each project card displays:
+
+- The project name
+- The current status of the project
+- The number of volunteers currently assigned
+- A short description of the project
+
+**Project Status Indicators**
+Each project displays one of the following status labels:
+
+| Status | What It Means |
+|--------|----------------|
+| **Planning** | The project has been set up but work has not yet begun |
+| **Active** | The project is currently in progress |
+| **On Hold** | The project has been temporarily paused |
+| **Completed** | The project has been finished |
+| **Cancelled** | The project has been stopped and will not continue |
+
+**Navigation Menu**
+Use the navigation menu to move between sections of the platform:
+
+- **Dashboard** — Returns you to this home view
+- **Projects** — A full list of your funded projects
+- **Funding Summary** — A breakdown of how your funding has been applied
+- **Project History** — Completed and archived projects
+- **Notifications**
+- **Settings**
+---
+
+## Section 4: Viewing a Project in Detail
+
+To see the full details of any project, click on its name or card from the Dashboard or Projects page.
+
+### What the Project Detail Page Shows
+
+**Project Overview**
+At the top of the page, you will see:
+
+- Project name and description
+- Start date and expected end date
+- Current project status
+- The coordinator managing the project
+
+**Volunteer Participation**
+This section shows:
+
+- Total number of volunteers assigned to the project
+- Total hours logged by volunteers on this project to date
+
+> **Please note:** Volunteer personal details such as names, email addresses, and phone numbers are not shown. Participation is presented as counts and hours only, in keeping with volunteer privacy standards.
+
+**Task Progress**
+This section shows a summary of tasks within the project:
+
+- Total number of tasks
+- Number of tasks completed
+- Number of tasks still in progress
+- Number of tasks that are blocked (tasks that cannot move forward until an issue is resolved)
+
+**Recent Activity**
+A log of recent updates on the project — such as tasks being completed or attendance being recorded. This log is automatically generated by the system and cannot be edited.
+
+---
+
+## Section 5: The Funding Summary
+
+The Funding Summary gives you a high-level view of how your funding is being applied across all projects.
+
+### How to Access the Funding Summary
+
+1. Click **Funding Summary** in the navigation menu.
+
+### What the Funding Summary Shows
+
+**Total Volunteer Hours**
+The combined total of all volunteer hours logged across every project linked to your funding. This figure is calculated directly from attendance records and is always accurate and up to date.
+
+**Projects Breakdown**
+A table listing each of your funded projects alongside:
+
+- Total volunteer hours for that project
+- Project status
+- Number of volunteers involved
+
+**Impact Metrics**
+This section presents key impact figures relevant to your funded projects. These figures are computed automatically from attendance records and project data.
+
+### Exporting the Funding Summary
+
+To save or share the funding summary:
+
+1. Click **Export** at the top right of the Funding Summary page.
+2. Choose either **PDF** or **CSV** format.
+3. The file will download to your device.
+
+---
+
+## Section 6: Project History
+
+The Project History section shows all projects that have been completed or archived. This allows you to review the full record of your funding activity over time.
+
+### How to Access Project History
+
+1. Click **Project History** in the navigation menu.
+
+### What You Will See
+
+You will see a list of all completed projects linked to your account, showing:
+
+- Project name
+- Start and end dates
+- Final volunteer hours logged
+- Final project status at the time of completion
+
+### Viewing a Completed Project
+
+Click on any project name to open its full detail page. The information displayed is the same as described in Section 4, but reflects the final state of the project at completion.
+
+---
+
+## Section 7: Privacy and Data
+
+SyntraAid is designed with privacy as a priority, for both volunteers and donors.
+
+### What You Can See
+
+As a donor, you are able to view:
+
+- Project names, descriptions, statuses, and timelines
+- Aggregate volunteer participation numbers and hours
+- Funding summaries and impact metrics for your funded projects
+- Project activity logs (system-generated entries only)
+
+### What You Cannot See
+
+The following information is never visible to donors, regardless of the project:
+
+- **Volunteer personal details** — This includes names, email addresses, phone numbers, and any other personal contact information. Volunteer participation is shown as numbers only.
+- **Internal notes** — Any notes, messages, or communications between coordinators and administrators are not accessible to donors.
+- **Other donors' information** — You cannot see funding information or project access belonging to other donors.
+- **Detailed financial records** — SyntraAid tracks volunteer hours and project progress, not financial transaction data.
+
+### Your Own Data
+
+Your account information — including your email address and access history — is held securely and is not shared with volunteers, coordinators, or other donors.
+
+If you wish to update your account details or have questions about your data, please contact your SyntraAid administrator.
+
+---
+
+*SyntraAid | Donor User Manual | Group 12 | Capstone 2026*
+*This document is part of the SyntraAid documentation pack maintained in the syntraaid-docs repository.*
