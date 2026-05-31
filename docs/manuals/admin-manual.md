@@ -19,14 +19,14 @@
 
 ## Section 1: Your Role as an Administrator
 
-As an Administrator on SyntraAid, you have the highest level of access in the system. You are responsible for keeping the platform running smoothly for everyone — coordinators, volunteers, and donors.
+As an Administrator on SyntraAid, you have the highest level of access in the system. You are responsible for keeping the platform running smoothly for everyone: coordinators, volunteers, and donors.
 
 Your key responsibilities include:
 
-- **User Management** — You invite new users to the platform and assign them their roles. You can also remove users who should no longer have access.
-- **Report Generation** — You can generate reports on project activity, volunteer hours, and funding impact. These reports are used internally and shared with donors where appropriate.
-- **Donor Access Control** — You decide what information donors are allowed to see. You control their visibility settings.
-- **System Oversight** — You can view the transparency dashboard, which shows a full log of activity across the platform.
+- **User Management.** You invite new users to the platform and assign them their roles. You can also deactivate users who should no longer have access.
+- **Report Generation.** You can generate reports on project activity, volunteer hours, and funding impact. These reports are used internally and shared with donors where appropriate.
+- **Donor Access Control.** You decide what information donors are allowed to see. You control their visibility settings.
+- **System Oversight.** You can view the transparency dashboard, which shows a full log of activity across the platform.
 
 You are the only role that can do all of the above. Coordinators and volunteers cannot access these settings.
 
@@ -38,16 +38,18 @@ When you log into SyntraAid, you are taken directly to the Admin Dashboard. This
 
 ### What You Will See
 
-Summary Cards at the Top
+**Summary Cards at the Top**
 
 These cards give you a quick overview of the system at a glance:
+
 - Total Projects
 - Total Volunteers
 - Tasks Completed
 - Reports Generated
 
 **Navigation Menu**
-On the left side of the screen (or accessible via the menu icon on smaller screens), you will find links to all admin sections:
+
+On the left side of the screen, or accessible via the menu icon on smaller screens, you will find links to all admin sections:
 
 - Users
 - Reports
@@ -55,7 +57,8 @@ On the left side of the screen (or accessible via the menu icon on smaller scree
 - Transparency Log
 
 **Recent Activity Feed**
-Below the summary cards, you will see a list of the most recent actions taken on the platform — such as new users joining, projects being updated, or attendance being logged. This feed is read-only. You cannot edit or delete entries here.
+
+Below the summary cards, you will see a list of the most recent actions taken on the platform, such as new users joining, projects being updated, or attendance being logged. This feed is read-only. You cannot edit or delete entries here.
 
 ---
 
@@ -69,10 +72,10 @@ All new users on SyntraAid must be invited by an Administrator. Users cannot sig
 2. Click the **Invite User** button.
 3. Enter the new user's **email address**.
 4. Select their **role** from the dropdown. The available roles are:
-- Admin
-- Coordinator
-- Volunteer
-- Donor
+   - Admin
+   - Coordinator
+   - Volunteer
+   - Donor
 5. Click **Send Invitation**.
 
 The user will receive an email with a link to complete their registration. Once they accept the invitation and set up their profile, they will appear in your users list.
@@ -89,28 +92,17 @@ The user will receive an email with a link to complete their registration. Once 
 
 ---
 
-### How to Remove a User
-
-1. Click **Users** in the navigation menu.
-2. Find the user you want to remove. You can use the search bar to find them by name or email.
-3. Click on their name to open their profile.
-4. Click the **Remove User** button.
-5. Confirm the action when prompted.
-
-> **Important:** Removing a user will revoke their access immediately. Their historical records — such as attendance logs and activity history — will remain in the system. This data is not deleted.
-
----
-
 ### How to Activate or Deactivate a User
 
-If a user should temporarily lose access without being fully removed, you can deactivate their account.
+User access is controlled by activating or deactivating an account. Deactivating a user suspends their access without removing their records. Reactivating restores access.
 
 1. Click **Users** in the navigation menu.
-2. Find the user and click on their name to open their profile.
-3. Click **Deactivate User** to suspend their access, or **Activate User** to restore it.
-4. Confirm the action when prompted.
+2. Find the user you want to update. You can use the search bar to find them by name or email.
+3. Click on their name to open their profile.
+4. Click **Deactivate User** to suspend their access, or **Activate User** to restore it.
+5. Confirm the action when prompted.
 
-> **Note:** A deactivated user cannot log in, but their records remain intact in the system. This is different from removing a user entirely.
+> **Important:** A deactivated user cannot log in, but their historical records, such as attendance logs and activity history, remain intact in the system. This data is never deleted, which keeps reports and the activity log accurate and complete.
 
 ---
 
@@ -120,9 +112,9 @@ Reports in SyntraAid give you a structured summary of activity across the platfo
 
 ### Types of Reports Available
 
-- **Impact Report** — A formatted summary of how funded projects are performing. This is the report donors can be given access to view.
-- **Attendance Export** — Shows hours logged per volunteer, across all projects.
-- **KPI Summary** — Shows the status of each project, key performance indicators, and volunteer participation metrics.
+- **Impact Report.** A formatted summary of how funded projects are performing. This is the report donors can be given access to view.
+- **Attendance Export.** Shows hours logged per volunteer, across all projects.
+- **KPI Summary.** Shows the status of each project, key performance indicators, and volunteer participation metrics.
 
 ---
 
@@ -163,6 +155,7 @@ Please verify the following before generating a report:
 6. Click **Export** and choose **PDF** to download.
 
 The Impact Report includes:
+
 - Project progress summaries
 - Volunteer activity summaries
 - Task completion information
@@ -181,6 +174,7 @@ The Impact Report includes:
 6. Click **Export** and choose **PDF** or **CSV** to download.
 
 The Attendance Export includes:
+
 - Attendance records
 - Volunteer hours logged
 - Participation records
@@ -198,6 +192,7 @@ The Attendance Export includes:
 6. Click **Export** and choose **PDF** or **CSV** to download.
 
 The KPI Summary includes:
+
 - Total volunteers
 - Total hours logged
 - Task completion rates
@@ -217,7 +212,7 @@ Donors on SyntraAid have a restricted view of the platform. They can only see wh
 
 ### What Donors Can See (by default)
 
-When a donor account is created, they can see:
+When a donor is linked to a project, they can see:
 
 - A list of projects they have funded
 - The current status of those projects
@@ -239,38 +234,40 @@ Regardless of your settings, the following are always hidden from donors:
 1. Click **Donor Access** in the navigation menu.
 2. Find the donor account you want to update.
 3. Click on their name to open their access profile.
-4. You will see a list of visibility toggles. Turn each setting on or off depending on what you want that donor to see.
+4. You will see a list of visibility toggles. Turn each setting on or off depending on what you want that donor to see. The available toggles are milestone progress, volunteer count, attendance hours, activity feed, and program health.
 5. Click **Save Settings**.
 
 The donor's view will update immediately.
 
 ---
 
-### How to Revoke Donor Access
+### How to Unlink a Donor from a Project
+
+If a donor should no longer have access to a particular project, you can deactivate the link between that donor and the project.
 
 1. Click **Donor Access** in the navigation menu.
 2. Find the donor and click their name.
-3. Click **Revoke Access**.
+3. Locate the project you want to unlink and set the link to inactive.
 4. Confirm when prompted.
 
-The donor will no longer be able to log in. Their account is suspended, not deleted.
+The donor will no longer see that project in their dashboard. The link is deactivated rather than deleted, so it can be restored later if needed.
 
 ---
 
 ## Section 6: The Transparency Dashboard
 
-The Transparency Dashboard is a full record of everything that has happened on the SyntraAid platform. Every significant action — a project being created, a volunteer logging attendance, a report being exported — is automatically recorded here with a timestamp.
+The Transparency Dashboard is a full record of everything that has happened on the SyntraAid platform. Every significant action, such as a project being created, a volunteer logging attendance, or a report being generated, is automatically recorded here with a timestamp.
 
 ### What You Can See on the Dashboard
 
-- **Activity Type** — What happened (e.g. "Attendance Logged", "User Invited", "Report Exported")
-- **User** — Who performed the action
-- **Project** — Which project the action is linked to (where applicable)
-- **Timestamp** — The exact date and time the action occurred
+- **Activity Type.** What happened (for example "Attendance Logged", "User Invited", "Report Generated")
+- **User.** Who performed the action
+- **Project.** Which project the action is linked to (where applicable)
+- **Timestamp.** The exact date and time the action occurred
 
 ### Important Rules About the Activity Log
 
-- **The log is read-only.** No one — including administrators — can edit or delete entries in this log.
+- **The log is read-only.** No one, including administrators, can edit or delete entries in this log.
 - **All timestamps are recorded automatically** by the system. They cannot be adjusted.
 - Donors with the appropriate visibility setting can see a limited version of this log for projects they have funded.
 
@@ -283,9 +280,9 @@ The Transparency Dashboard is a full record of everything that has happened on t
    - Project
    - Activity type
 3. Scroll through the results to review activity.
-4. To export a copy of the log, click **Export Log** and choose PDF or CSV.
 
 ---
 
 *SyntraAid | Admin User Manual | Group 12 | Capstone 2026*
+
 *This document is part of the SyntraAid documentation pack maintained in the syntraaid-docs repository.*
