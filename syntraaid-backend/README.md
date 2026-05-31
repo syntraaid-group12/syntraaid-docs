@@ -1,6 +1,6 @@
 # Syntraaid Backend
 
-The server-side application for **SyntraAid** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The server-side application for **SyntraAid**  a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This service handles all business logic, data storage, authentication, and API endpoints that power the web and mobile frontends.
 
@@ -139,17 +139,17 @@ Full API documentation is maintained separately in the `syntraaid-docs` reposito
 
 The database contains eleven collections:
 
-- `users` — All user accounts and roles
-- `volunteerProfiles` — Volunteer profiles, skills, and availability
-- `projects` — Projects with goals, milestones, and timelines
-- `tasks` — Tasks linked to projects and assigned to volunteers
-- `attendanceLogs` — Individual attendance and hour entries
-- `activityLogs` — Tamper-proof record of all significant system events
-- `reports` — Generated impact reports and export records
-- `donorProjectLinks` — Links between donors and the projects they fund, with visibility settings
-- `notifications` — In-app notification records
-- `notificationPreferences` — Per-user notification preferences
-- `contactRequests` — Contact and request-access submissions from the public site
+- `users`  All user accounts and roles
+- `volunteerProfiles`  Volunteer profiles, skills, and availability
+- `projects`  Projects with goals, milestones, and timelines
+- `tasks`  Tasks linked to projects and assigned to volunteers
+- `attendanceLogs`  Individual attendance and hour entries
+- `activityLogs`  Tamper-proof record of all significant system events
+- `reports`  Generated impact reports and export records
+- `donorProjectLinks`  Links between donors and the projects they fund, with visibility settings
+- `notifications`  In-app notification records
+- `notificationPreferences`  Per-user notification preferences
+- `contactRequests`  Contact and request-access submissions from the public site
 
 ---
 
@@ -190,7 +190,7 @@ Before the capstone demonstration, the following must pass:
 | Detail | Info |
 |---|---|
 | Product | SyntraAid |
-| Group | Group 12 — Capstone 2026 |
+| Group | Group 12  Capstone 2026 |
 | Track | Backend Development |
 | Deadline | End of Week 3 |
 | Deployment | Railway / Render |
