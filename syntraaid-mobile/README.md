@@ -1,6 +1,6 @@
 # SyntraAid Mobile
 
-The mobile application for **SyntraAid_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The mobile application for **SyntraAid** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This app is designed primarily for volunteers who need quick, on-the-go access to their task assignments, attendance logging, and project updates from their smartphones.
 
@@ -28,7 +28,6 @@ The mobile app provides:
 | Navigation | React Navigation |
 | State Management | React Context |
 | HTTP Client | Fetch API |
-| Notifications | Expo Notifications |
 | Platform | iOS and Android |
 | Hosting | Expo / EAS Build |
 
@@ -96,7 +95,7 @@ All API calls throughout the app use the Fetch API and reference this constant.
 ## Folder Structure
 
 ```
-syntraAid-mobile/
+syntraaid-mobile/
 ├── assets/                  # Images, icons, and fonts
 ├── src/
 │   ├── components/          # Reusable UI components
@@ -153,7 +152,7 @@ Before the capstone demonstration, the following must pass on a real mobile devi
 - A volunteer can log in and see their assigned tasks
 - A volunteer can update a task status from Not Started to In Progress to Completed
 - A volunteer can log attendance and hours for a session
-- A volunteer receives a push notification within 60 seconds of a task being assigned
+- A volunteer receives an in-app notification within 60 seconds of a task being assigned
 - The full volunteer flow runs end to end on both iOS and Android
 
 ---
@@ -172,7 +171,7 @@ Before the capstone demonstration, the following must pass on a real mobile devi
 
 | Detail | Info |
 |---|---|
-| Product | SyntraAid_App |
+| Product | SyntraAid |
 | Group | Group 12 — Capstone 2026 |
 | Track | Mobile Development |
 | Deadline | End of Week 3 |

@@ -1,6 +1,6 @@
 # SyntraAid Backend
 
-The server-side application for **SyntraAid_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The server-side application for **SyntraAid** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This service handles all business logic, data storage, authentication, and API endpoints that power the web and mobile frontends.
 
@@ -10,7 +10,7 @@ This service handles all business logic, data storage, authentication, and API e
 
 The backend is responsible for:
 
-- Authenticating users and enforcing role-based access control (Volunteer, Project Coordinator, NGO Admin, Donor, Platform Admin)
+- Authenticating users and enforcing role-based access control (Volunteer, Project Coordinator, NGO Admin, Donor)
 - Managing volunteer profiles, skills, and availability data
 - Creating and tracking projects, milestones, and tasks
 - Logging attendance and calculating volunteer hours automatically
@@ -82,7 +82,6 @@ Create a `.env` file in the root of the project and add the following:
 PORT=5000
 MONGO_URI=your_mongodb_atlas_connection_string
 JWT_SECRET=your_jwt_secret_key
-EMAIL_SERVICE=your_email_service_api_key
 NODE_ENV=development
 ```
 
@@ -93,7 +92,7 @@ NODE_ENV=development
 ## Folder Structure
 
 ```
-syntraAid-backend/
+syntraaid-backend/
 ├── config/            # Database connection and app configuration
 ├── constants/         # Reusable constant values used across the app
 ├── middleware/        # Authentication and role-based access checks
@@ -121,7 +120,7 @@ The backend exposes REST API endpoints across the following modules:
 | Donors | `/api/donors` | Donor dashboard, funded project views |
 | Notifications | `/api/notifications` | In-app notifications |
 
-Full API documentation is maintained separately in the `syntraAid-docs` repository.
+Full API documentation is maintained separately in the `syntraaid-docs` repository.
 
 ---
 
@@ -133,7 +132,6 @@ Full API documentation is maintained separately in the `syntraAid-docs` reposito
 | Project Coordinator | Manage projects and volunteers within assigned projects |
 | NGO Admin | Full access to all projects, volunteers, and reporting |
 | Donor | Read-only access to funded projects only |
-| Platform Admin | System-wide oversight and configuration |
 
 ---
 
@@ -142,13 +140,16 @@ Full API documentation is maintained separately in the `syntraAid-docs` reposito
 Core collections in the database:
 
 - `users` — All user accounts and roles
-- `volunteers` — Volunteer profiles, skills, and availability
+- `volunteerProfiles` — Volunteer profiles, skills, and availability
 - `projects` — Projects with goals, milestones, and timelines
 - `tasks` — Tasks linked to projects and assigned to volunteers
-- `assignments` — Records linking volunteers to projects
-- `attendancelogs` — Individual attendance and hour entries
-- `activitylogs` — Tamper-proof record of all significant system events
+- `attendanceLogs` — Individual attendance and hour entries
+- `activityLogs` — Tamper-proof record of all significant system events
+- `reports` — Generated report records and file URLs
+- `donorProjectLinks` — Records linking donors to funded projects
 - `notifications` — In-app notification records
+- `notificationPreferences` — Per-user notification settings
+- `contactRequests` — Contact and onboarding requests
 
 ---
 
@@ -164,7 +165,7 @@ npm test
 
 Before the capstone demonstration, the following must pass:
 
-- All five user roles can log in and see only their permitted views
+- All four user roles can log in and see only their permitted views
 - Volunteers can be searched by skill and assigned to a project
 - A project can be created and tracked through to completion
 - Attendance entries are saved correctly and cumulative totals are accurate
@@ -188,7 +189,7 @@ Before the capstone demonstration, the following must pass:
 
 | Detail | Info |
 |---|---|
-| Product | SyntraAid_App |
+| Product | SyntraAid |
 | Group | Group 12 — Capstone 2026 |
 | Track | Backend Development |
 | Deadline | End of Week 3 |

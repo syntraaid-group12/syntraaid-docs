@@ -1,6 +1,6 @@
 # SyntraAid Frontend
 
-The web application for **SyntraAid_App** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The web application for **SyntraAid** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This is the browser-based interface built with plain HTML, Tailwind CSS, and Vanilla JavaScript. It is used by NGO Administrators, Project Coordinators, Volunteers, and Donors to manage volunteers, track projects, and generate impact reports.
 
@@ -31,7 +31,7 @@ The frontend provides:
 | Logic | Vanilla JavaScript |
 | Routing | Custom router in router.js |
 | HTTP Client | Fetch API |
-| Hosting | Vercel (free tier) |
+| Hosting | Netlify (free tier) |
 
 > **Note for contributors:** If the tech stack changes during development, update this table before the Week 4 handoff.
 
@@ -88,7 +88,7 @@ Update the API URL in that file to point to your local or deployed backend.
 ## Folder Structure
 
 ```
-syntraAid-frontend/
+syntraaid-frontend/
 ├── auth/              # Login and registration pages
 ├── admin/             # NGO Admin dashboard and management pages
 ├── coordinator/       # Project Coordinator pages
@@ -175,8 +175,8 @@ Before the capstone demonstration, the following must pass on the web applicatio
 
 | Detail | Info |
 |---|---|
-| Product | SyntraAid_App |
+| Product | SyntraAid |
 | Group | Group 12 — Capstone 2026 |
 | Track | Frontend Development |
 | Deadline | End of Week 3 |
-| Deployment | Vercel |
+| Deployment | Netlify |
