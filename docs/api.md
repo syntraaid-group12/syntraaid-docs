@@ -83,20 +83,17 @@ Registers a new user using a valid invite token. The invite token is sent by an 
 **Request Body:**
 
 ```json
-{
-  "email": "volunteer@example.com",
-  "password": "yourpassword",
+  {
   "inviteToken": "uuid-invite-token-here",
-  "role": "volunteer"
+  "password": "yourpassword"
 }
+
 ```
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| `email` | String | Yes | Must be unique. Stored in lowercase. |
 | `password` | String | Yes | Will be hashed before storing. |
 | `inviteToken` | String | Yes | Single-use token sent by admin. Becomes null after use. |
-| `role` | String | Yes | Must be one of: `admin`, `coordinator`, `volunteer`, `donor` |
 
 **Success Response — 201 Created:**
 
@@ -160,43 +157,7 @@ Logs in an existing user and returns a JWT token.
 
 ---
 
-### POST /api/auth/invite
 
-Admin creates an invite token and sends it to a new user's email address.
-
-**Access:** Admin only
-
-**Request Body:**
-
-```json
-{
-  "email": "newuser@example.com",
-  "role": "volunteer"
-}
-```
-
-| Field | Type | Required | Description |
-|---|---|---|---|
-| `email` | String | Yes | Email address to send the invite to |
-| `role` | String | Yes | Must be one of: `admin`, `coordinator`, `volunteer`, `donor` |
-
-**Success Response — 201 Created:**
-
-```json
-{
-  "message": "Invite sent successfully",
-  "inviteToken": "uuid-token-here"
-}
-```
-
-**Error Responses:**
-
-| Status Code | Meaning |
-|---|---|
-| 400 | Missing fields or invalid role |
-| 409 | Email already registered |
-
----
 
 ### POST /api/auth/forgot-password
 
@@ -312,35 +273,79 @@ Returns a single user by their ID.
 
 ---
 
-### PATCH /api/users/:id/activate
+### POST /api/users/invite
 
-Activates a user account. New users are inactive by default until an admin activates them.
+Admin creates an invite token and sends it to a new user's email address.
 
 **Access:** Admin only
 
-**Success Response — 200 OK:**
+**Request Body:**
 
 ```json
 {
-  "message": "User activated successfully"
+  "email": "newuser@example.com",
+  "role": "volunteer"
 }
 ```
+
+| Field | Type | Required | Description |
+|---|---|---|---|
+| `email` | String | Yes | Email address to send the invite to |
+| `role` | String | Yes | Must be one of: `admin`, `coordinator`, `volunteer`, `donor` |
+
+**Success Response — 201 Created:**
+
+```json
+{
+  "message": "Invite sent successfully",
+  "inviteToken": "uuid-token-here"
+}
+```
+
+**Error Responses:**
+
+| Status Code | Meaning |
+|---|---|
+| 400 | Missing fields or invalid role |
+| 409 | Email already registered |
+
 
 ---
 
-### PATCH /api/users/:id/deactivate
+---
+### PATCH /api/users/:id/activate
 
-Deactivates a user account without deleting it.
+Activates or deactivates a user account. Pass `isActive: true` to activate 
+or `isActive: false` to deactivate.
 
 **Access:** Admin only
+
+**Request Body:**
+
+```json
+{
+  "isActive": true
+}
+```
+
+| Field | Type | Required | Description |
+|---|---|---|---|
+| `isActive` | Boolean | Yes | Pass `true` to activate or `false` to deactivate |
 
 **Success Response — 200 OK:**
 
 ```json
 {
-  "message": "User deactivated successfully"
+  "message": "User updated successfully"
 }
 ```
+
+**Error Responses:**
+
+| Status Code | Meaning |
+|---|---|
+| 404 | User not found |
+| 403 | Access denied |
 
 ---
 
@@ -423,7 +428,7 @@ Returns a single volunteer profile by ID.
 
 ---
 
-### POST /api/volunteers
+### POST /api/volunteers/:id/profile
 
 Creates a volunteer profile for a registered volunteer user.
 
@@ -464,7 +469,7 @@ Creates a volunteer profile for a registered volunteer user.
 
 ---
 
-### PATCH /api/volunteers/:id
+### PUT /api/volunteers/:id/profile
 
 Updates an existing volunteer profile.
 
@@ -865,22 +870,6 @@ Updates task details or changes task status.
 
 ---
 
-### DELETE /api/tasks/:id
-
-Permanently deletes a task.
-
-**Access:** Admin only
-
-**Success Response — 200 OK:**
-
-```json
-{
-  "message": "Task deleted"
-}
-```
-
----
-
 ## 6. Attendance Endpoints
 
 Base path: `/api/attendance`
@@ -919,23 +908,6 @@ Returns all attendance records. Can be filtered by volunteer or project.
     "loggedAt": "2026-06-01T18:00:00.000Z"
   }
 ]
-```
-
----
-
-### GET /api/attendance/volunteer/:volunteerId/total
-
-Returns the total hours logged by a specific volunteer. This value is always computed from attendance records — it is never stored as a separate field.
-
-**Access:** Admin, Coordinator, Volunteer (own record)
-
-**Success Response — 200 OK:**
-
-```json
-{
-  "volunteerId": "64f1a2b3c4d5e6f7a8b9c0d2",
-  "totalHoursLogged": 42.5
-}
 ```
 
 ---
@@ -1147,7 +1119,7 @@ Updates notification preferences for the currently logged-in user.
 ```json
 {
   "deadlineReminder": false,
-  "preferredChannel": "email"
+ "preferredChannel": "in_app"
 }
 ```
 
@@ -1157,7 +1129,7 @@ Updates notification preferences for the currently logged-in user.
 | `deadlineReminder` | Boolean | Notify before a task deadline |
 | `taskBlocked` | Boolean | Notify when a task is blocked |
 | `milestoneCompleted` | Boolean | Notify when a milestone is completed |
-| `preferredChannel` | String | Must be one of: `in_app`, `email`, `both` |
+| `preferredChannel` | String | Must be one of: `in_app` |
 
 **Success Response — 200 OK:**
 
@@ -1485,7 +1457,7 @@ All enum fields must use the exact values listed in this document. Sending an un
 | `task.status` | `not_started`, `in_progress`, `blocked`, `completed` |
 | `report.reportType` | `impact_report`, `attendance_export`, `kpi_summary` |
 | `notification.notificationType` | `task_assigned`, `deadline_reminder`, `task_blocked`, `milestone_completed`, `project_status_changed`, `donor_milestone_alert` |
-| `notification.deliveryChannel` | `in_app`, `email`, `both` |
+| `notification.deliveryChannel` | `in_app` |
 | `activityLog.activityType` | `project_created`, `project_status_changed`, `task_created`, `task_status_changed`, `volunteer_assigned`, `attendance_logged`, `milestone_completed`, `report_generated`, `donor_linked` |
 | `contactRequest.status` | `new`, `reviewed`, `actioned` |
 
