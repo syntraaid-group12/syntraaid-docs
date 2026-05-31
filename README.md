@@ -1,6 +1,6 @@
 # Syntraaid Mobile
 
-The mobile application for **SyntraAid** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The mobile application for **SyntraAid**  a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This app is designed primarily for volunteers who need quick, on-the-go access to their task assignments, attendance logging, and project updates from their smartphones.
 
@@ -45,7 +45,7 @@ Make sure you have the following installed:
 - npm (comes with Node.js)
 - Expo CLI: `npm install -g expo-cli`
 - Git
-- Expo Go app on your phone (for testing) — available on the App Store and Google Play
+- Expo Go app on your phone (for testing)  available on the App Store and Google Play
 
 ### Installation
 
@@ -129,8 +129,8 @@ syntraaid-mobile/
 
 The app delivers in-app notifications to volunteers for:
 
-- New task assignments — delivered within 60 seconds of assignment
-- Deadline reminders — sent 24 hours before a task is due
+- New task assignments  delivered within 60 seconds of assignment
+- Deadline reminders  sent 24 hours before a task is due
 - Project updates from their coordinator
 
 Users can manage notification preferences within the app settings.
@@ -174,7 +174,7 @@ Before the capstone demonstration, the following must pass on a real mobile devi
 | Detail | Info |
 |---|---|
 | Product | SyntraAid |
-| Group | Group 12 — Capstone 2026 |
+| Group | Group 12  Capstone 2026 |
 | Track | Mobile Development |
 | Target Platforms | iOS and Android |
 | Deadline | End of Week 3 |
