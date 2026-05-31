@@ -1,288 +1,253 @@
-# SyntraAid Admin User Manual
+# SyntraAid Donor User Manual
 
 **Version:** MVP v1.0
-**Audience:** System Administrators
+**Audience:** Donors and Funding Managers
 **Project:** SyntraAid | Group 12 | Capstone 2026
 
 ---
 
 ## Table of Contents
 
-1. [Your Role as an Administrator](#section-1-your-role-as-an-administrator)
-2. [The Admin Dashboard](#section-2-the-admin-dashboard)
-3. [Inviting and Managing Users](#section-3-inviting-and-managing-users)
-4. [Generating Reports](#section-4-generating-reports)
-5. [Managing Donor Access](#section-5-managing-donor-access)
-6. [The Transparency Dashboard](#section-6-the-transparency-dashboard)
+1. [Welcome](#section-1-welcome)
+2. [Logging In](#section-2-logging-in)
+3. [Your Home Dashboard](#section-3-your-home-dashboard)
+4. [Viewing a Project in Detail](#section-4-viewing-a-project-in-detail)
+5. [The Funding Summary](#section-5-the-funding-summary)
+6. [Project History](#section-6-project-history)
+7. [Privacy and Data](#section-7-privacy-and-data)
 
 ---
 
-## Section 1: Your Role as an Administrator
+## Section 1: Welcome
 
-As an Administrator on SyntraAid, you have the highest level of access in the system. You are responsible for keeping the platform running smoothly for everyone: coordinators, volunteers, and donors.
+Welcome to SyntraAid.
 
-Your key responsibilities include:
+SyntraAid is a project and volunteer management platform designed to help organisations coordinate their work and demonstrate the impact of that work to their funding partners.
 
-- **User Management.** You invite new users to the platform and assign them their roles. You can also deactivate users who should no longer have access.
-- **Report Generation.** You can generate reports on project activity, volunteer hours, and funding impact. These reports are used internally and shared with donors where appropriate.
-- **Donor Access Control.** You decide what information donors are allowed to see. You control their visibility settings.
-- **System Oversight.** You can view the transparency dashboard, which shows a full log of activity across the platform.
+As a donor, your access to SyntraAid gives you a clear, organised view of the projects your funding supports. You can track project progress, review volunteer participation, and see how your contributions are being applied, all in one place, without needing to request individual updates.
 
-You are the only role that can do all of the above. Coordinators and volunteers cannot access these settings.
+This manual will guide you through every part of your SyntraAid experience. If you encounter any difficulty or have questions not covered here, please contact your organisation's administrator.
 
 ---
 
-## Section 2: The Admin Dashboard
+## Section 2: Logging In
 
-When you log into SyntraAid, you are taken directly to the Admin Dashboard. This is your central control panel.
+### How to Access SyntraAid
+
+SyntraAid is accessed through your web browser. You do not need to install any software.
+
+1. Open your preferred web browser (Chrome, Firefox, Safari, or Edge).
+2. Go to the SyntraAid web address provided to you by your administrator.
+3. You will see the SyntraAid login page.
+
+### How to Log In
+
+1. Enter the **email address** your invitation was sent to.
+2. Enter your **password**.
+3. Click **Log In**.
+
+You will be taken directly to your donor dashboard.
+
+---
+
+### If You Have Forgotten Your Password
+
+1. On the login page, click **Forgot Password?**
+2. Enter your email address and click **Send Reset Link**.
+3. Check your inbox for an email from SyntraAid.
+4. Click the link in the email and follow the instructions to create a new password.
+
+> If you do not receive the reset email within a few minutes, please check your spam or junk folder. If the issue persists, contact your administrator.
+
+---
+
+### First-Time Login
+
+If this is your first time logging in, you would have received an invitation email from SyntraAid. Click the link in that email to set up your password, then log in as described above.
+
+---
+
+## Section 3: Your Home Dashboard
+
+After logging in, you will arrive at your Home Dashboard. This is your main view of all activity related to your funded projects.
 
 ### What You Will See
 
-**Summary Cards at the Top**
+**Active Projects Panel**
 
-These cards give you a quick overview of the system at a glance:
+This panel shows all projects that are currently in progress and linked to your funding. Each project card displays:
 
-- Total Projects
-- Total Volunteers
-- Tasks Completed
-- Reports Generated
+- The project name
+- The current status of the project
+- The number of volunteers currently assigned
+- A short description of the project
+
+**Project Status Indicators**
+
+Each project displays one of the following status labels:
+
+| Status | What It Means |
+|--------|----------------|
+| **Planning** | The project has been set up but work has not yet begun |
+| **Active** | The project is currently in progress |
+| **On Hold** | The project has been temporarily paused |
+| **Completed** | The project has been finished |
+| **Cancelled** | The project has been stopped and will not continue |
 
 **Navigation Menu**
 
-On the left side of the screen, or accessible via the menu icon on smaller screens, you will find links to all admin sections:
+Use the navigation menu to move between sections of the platform:
 
-- Users
-- Reports
-- Donor Access
-- Transparency Log
-
-**Recent Activity Feed**
-
-Below the summary cards, you will see a list of the most recent actions taken on the platform, such as new users joining, projects being updated, or attendance being logged. This feed is read-only. You cannot edit or delete entries here.
+- **Dashboard.** Returns you to this home view
+- **Projects.** A full list of your funded projects
+- **Funding Summary.** A breakdown of how your funding has been applied
+- **Project History.** Completed and archived projects
+- **Notifications**
+- **Settings**
 
 ---
 
-## Section 3: Inviting and Managing Users
+## Section 4: Viewing a Project in Detail
 
-All new users on SyntraAid must be invited by an Administrator. Users cannot sign up on their own.
+To see the full details of any project, click on its name or card from the Dashboard or Projects page.
 
-### How to Invite a New User
+### What the Project Detail Page Shows
 
-1. From the Admin Dashboard, click **Users** in the navigation menu.
-2. Click the **Invite User** button.
-3. Enter the new user's **email address**.
-4. Select their **role** from the dropdown. The available roles are:
-   - Admin
-   - Coordinator
-   - Volunteer
-   - Donor
-5. Click **Send Invitation**.
+**Project Overview**
 
-The user will receive an email with a link to complete their registration. Once they accept the invitation and set up their profile, they will appear in your users list.
+At the top of the page, you will see:
 
-> **Note:** You do not set passwords for users. Each user creates their own password when they accept the invitation.
+- Project name and description
+- Start date and expected end date
+- Current project status
+- The coordinator managing the project
 
----
+**Volunteer Participation**
 
-### How to View All Users
+This section shows:
 
-1. Click **Users** in the navigation menu.
-2. You will see a list of all users on the platform, with their name, email address, role, and account status.
-3. You can filter the list by role using the filter options at the top of the page.
+- Total number of volunteers assigned to the project
+- Total hours logged by volunteers on this project to date
 
----
+> **Please note:** Volunteer personal details such as names, email addresses, and phone numbers are not shown. Participation is presented as counts and hours only, in keeping with volunteer privacy standards.
 
-### How to Activate or Deactivate a User
+**Task Progress**
 
-User access is controlled by activating or deactivating an account. Deactivating a user suspends their access without removing their records. Reactivating restores access.
+This section shows a summary of tasks within the project:
 
-1. Click **Users** in the navigation menu.
-2. Find the user you want to update. You can use the search bar to find them by name or email.
-3. Click on their name to open their profile.
-4. Click **Deactivate User** to suspend their access, or **Activate User** to restore it.
-5. Confirm the action when prompted.
+- Total number of tasks
+- Number of tasks completed
+- Number of tasks still in progress
+- Number of tasks that are blocked (tasks that cannot move forward until an issue is resolved)
 
-> **Important:** A deactivated user cannot log in, but their historical records, such as attendance logs and activity history, remain intact in the system. This data is never deleted, which keeps reports and the activity log accurate and complete.
+**Recent Activity**
+
+A log of recent updates on the project, such as tasks being completed or attendance being recorded. This log is automatically generated by the system and cannot be edited.
 
 ---
 
-## Section 4: Generating Reports
+## Section 5: The Funding Summary
 
-Reports in SyntraAid give you a structured summary of activity across the platform. You can generate reports for internal use or to share with donors.
+The Funding Summary gives you a high-level view of how your funding is being applied across all projects.
 
-### Types of Reports Available
+### How to Access the Funding Summary
 
-- **Impact Report.** A formatted summary of how funded projects are performing. This is the report donors can be given access to view.
-- **Attendance Export.** Shows hours logged per volunteer, across all projects.
-- **KPI Summary.** Shows the status of each project, key performance indicators, and volunteer participation metrics.
+1. Click **Funding Summary** in the navigation menu.
 
----
+### What the Funding Summary Shows
 
-### How to Generate a Report
+**Total Volunteer Hours**
 
-1. From the Admin Dashboard, click **Reports** in the navigation menu.
-2. Select the report type you want to generate.
-3. Use the filter options to narrow your results:
-   - Date range
-   - Specific project (optional)
-   - Specific volunteer (optional, for activity reports)
-4. Click **Generate Report**.
-5. The report will appear on screen. Review it to make sure the information looks correct.
-6. To save it, click **Export**. You can export the report as a **PDF** or **CSV** file.
+The combined total of all volunteer hours logged across every project linked to your funding. This figure is calculated directly from attendance records and is always accurate and up to date.
 
-> **Note:** Total volunteer hours shown in reports are always calculated directly from attendance records. These figures cannot be manually changed.
+**Projects Breakdown**
 
----
+A table listing each of your funded projects alongside:
 
-### Before Generating Any Report
+- Total volunteer hours for that project
+- Project status
+- Number of volunteers involved
 
-Please verify the following before generating a report:
+**Impact Metrics**
 
-- Attendance records are complete
-- Project milestone progress is updated
-- Task completion data is accurate
-- Volunteer participation records are correct
+This section presents key impact figures relevant to your funded projects. These figures are computed automatically from attendance records and project data.
 
----
+### Understanding Program Health
 
-### How to Generate an Impact Report
+Each funded project also shows a **program health** indicator. This is a simple summary of how well a project is progressing, so you can see at a glance whether a project is on track or may need attention. There are four program health labels:
 
-1. From the Admin Dashboard, click **Reports** in the navigation menu.
-2. Select **Impact Report** as the report type.
-3. Select a project or date range using the filter options.
-4. Click **Generate Report**.
-5. Review the report on screen.
-6. Click **Export** and choose **PDF** to download.
+| Program Health | What It Means |
+|----------------|----------------|
+| **On Track** | The project is progressing well. Tasks are being completed at a healthy pace and volunteers are actively participating. |
+| **At Risk** | The project shows early signs of slowing down. For example, task completion has dipped or a milestone is running behind. It is worth keeping an eye on. |
+| **Needs Attention** | The project is facing real difficulty. Task completion is low, or there has been little recent volunteer activity, or a milestone is significantly overdue. |
+| **Completed** | The project has been finished. |
 
-The Impact Report includes:
+Program health is calculated automatically by the system from task completion, volunteer attendance, and milestone progress. You do not need to do anything to update it.
 
-- Project progress summaries
-- Volunteer activity summaries
-- Task completion information
-- Attendance contribution data
-- Project milestone progress
+### Exporting the Funding Summary
+
+To save or share the funding summary:
+
+1. Click **Export** at the top right of the Funding Summary page.
+2. Choose either **PDF** or **CSV** format.
+3. The file will download to your device.
 
 ---
 
-### How to Generate an Attendance Export
+## Section 6: Project History
 
-1. From the Admin Dashboard, click **Reports** in the navigation menu.
-2. Select **Attendance Export** as the report type.
-3. Select a project or date range using the filter options.
-4. Click **Generate Report**.
-5. Review the report on screen.
-6. Click **Export** and choose **PDF** or **CSV** to download.
+The Project History section shows all projects that have been completed or archived. This allows you to review the full record of your funding activity over time.
 
-The Attendance Export includes:
+### How to Access Project History
 
-- Attendance records
-- Volunteer hours logged
-- Participation records
-- Project attendance summaries
+1. Click **Project History** in the navigation menu.
 
----
+### What You Will See
 
-### How to Generate a KPI Summary
+You will see a list of all completed projects linked to your account, showing:
 
-1. From the Admin Dashboard, click **Reports** in the navigation menu.
-2. Select **KPI Summary** as the report type.
-3. Select a project or reporting range using the filter options.
-4. Click **Generate Report**.
-5. Review the KPI information on screen.
-6. Click **Export** and choose **PDF** or **CSV** to download.
+- Project name
+- Start and end dates
+- Final volunteer hours logged
+- Final project status at the time of completion
 
-The KPI Summary includes:
+### Viewing a Completed Project
 
-- Total volunteers
-- Total hours logged
-- Task completion rates
-- Project status information
+Click on any project name to open its full detail page. The information displayed is the same as described in Section 4, but reflects the final state of the project at completion.
 
 ---
 
-### Report Generation Requirement
+## Section 7: Privacy and Data
 
-Impact report generation must complete within two minutes of clicking Generate Report.
+SyntraAid is designed with privacy as a priority, for both volunteers and donors.
 
----
+### What You Can See
 
-## Section 5: Managing Donor Access
+As a donor, you are able to view:
 
-Donors on SyntraAid have a restricted view of the platform. They can only see what you allow them to see. It is your responsibility as an Administrator to manage these settings carefully.
+- Project names, descriptions, statuses, and timelines
+- Aggregate volunteer participation numbers and hours
+- Funding summaries and impact metrics for your funded projects
+- Project activity logs (system-generated entries only)
 
-### What Donors Can See (by default)
+### What You Cannot See
 
-When a donor is linked to a project, they can see:
+The following information is never visible to donors, regardless of the project:
 
-- A list of projects they have funded
-- The current status of those projects
-- Volunteer participation numbers (not volunteer personal details)
-- Funding summaries and impact metrics
+- **Volunteer personal details.** This includes names, email addresses, phone numbers, and any other personal contact information. Volunteer participation is shown as numbers only.
+- **Internal notes.** Any notes, messages, or communications between coordinators and administrators are not accessible to donors.
+- **Other donors' information.** You cannot see funding information or project access belonging to other donors.
+- **Detailed financial records.** SyntraAid tracks volunteer hours and project progress, not financial transaction data.
 
-### What Donors Can Never See
+### Your Own Data
 
-Regardless of your settings, the following are always hidden from donors:
+Your account information, including your email address and access history, is held securely and is not shared with volunteers, coordinators, or other donors.
 
-- Volunteer personal contact information (email addresses, phone numbers)
-- Internal notes or coordinator communications
-- Detailed task breakdowns not related to their funded project
-
----
-
-### How to Adjust a Donor's Visibility Settings
-
-1. Click **Donor Access** in the navigation menu.
-2. Find the donor account you want to update.
-3. Click on their name to open their access profile.
-4. You will see a list of visibility toggles. Turn each setting on or off depending on what you want that donor to see. The available toggles are milestone progress, volunteer count, attendance hours, activity feed, and program health.
-5. Click **Save Settings**.
-
-The donor's view will update immediately.
+If you wish to update your account details or have questions about your data, please contact your SyntraAid administrator.
 
 ---
 
-### How to Unlink a Donor from a Project
-
-If a donor should no longer have access to a particular project, you can deactivate the link between that donor and the project.
-
-1. Click **Donor Access** in the navigation menu.
-2. Find the donor and click their name.
-3. Locate the project you want to unlink and set the link to inactive.
-4. Confirm when prompted.
-
-The donor will no longer see that project in their dashboard. The link is deactivated rather than deleted, so it can be restored later if needed.
-
----
-
-## Section 6: The Transparency Dashboard
-
-The Transparency Dashboard is a full record of everything that has happened on the SyntraAid platform. Every significant action, such as a project being created, a volunteer logging attendance, or a report being generated, is automatically recorded here with a timestamp.
-
-### What You Can See on the Dashboard
-
-- **Activity Type.** What happened (for example "Attendance Logged", "User Invited", "Report Generated")
-- **User.** Who performed the action
-- **Project.** Which project the action is linked to (where applicable)
-- **Timestamp.** The exact date and time the action occurred
-
-### Important Rules About the Activity Log
-
-- **The log is read-only.** No one, including administrators, can edit or delete entries in this log.
-- **All timestamps are recorded automatically** by the system. They cannot be adjusted.
-- Donors with the appropriate visibility setting can see a limited version of this log for projects they have funded.
-
-### How to Use the Dashboard
-
-1. Click **Transparency Log** in the navigation menu.
-2. Use the filters at the top to search by:
-   - Date range
-   - User
-   - Project
-   - Activity type
-3. Scroll through the results to review activity.
-
----
-
-*SyntraAid | Admin User Manual | Group 12 | Capstone 2026*
+*SyntraAid | Donor User Manual | Group 12 | Capstone 2026*
 
 *This document is part of the SyntraAid documentation pack maintained in the syntraaid-docs repository.*
