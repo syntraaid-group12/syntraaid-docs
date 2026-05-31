@@ -1,6 +1,6 @@
 # Syntraaid Frontend
 
-The web application for **SyntraAid** — a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
+The web application for **SyntraAid**   a transparency-focused NGO and volunteer management platform built by Group 12, Capstone 2026.
 
 This is the browser-based interface built with plain HTML, Tailwind CSS, and Vanilla JavaScript. It is used by NGO Administrators, Project Coordinators, Volunteers, and Donors to manage volunteers, track projects, and generate impact reports.
 
@@ -125,12 +125,12 @@ syntraaid-frontend/
 
 Each user role has its own folder containing the HTML pages for that role:
 
-- **`auth/`** — Shared login and registration pages used by all roles
-- **`admin/`** — Pages only accessible to the NGO Administrator
-- **`coordinator/`** — Pages for Project Coordinators managing projects and volunteers
-- **`volunteer/`** — Pages for Volunteers viewing tasks and logging attendance
-- **`donor/`** — Read-only pages for Donors viewing funded projects
-- **`shared/`** — Components like navigation bars, modals, and notification panels used across roles
+- **`auth/`**   Shared login and registration pages used by all roles
+- **`admin/`**   Pages only accessible to the NGO Administrator
+- **`coordinator/`**   Pages for Project Coordinators managing projects and volunteers
+- **`volunteer/`**   Pages for Volunteers viewing tasks and logging attendance
+- **`donor/`**   Read-only pages for Donors viewing funded projects
+- **`shared/`**   Components like navigation bars, modals, and notification panels used across roles
 
 ---
 
@@ -176,7 +176,7 @@ Before the capstone demonstration, the following must pass on the web applicatio
 | Detail | Info |
 |---|---|
 | Product | SyntraAid |
-| Group | Group 12 — Capstone 2026 |
+| Group | Group 12   Capstone 2026 |
 | Track | Frontend Development |
 | Deadline | End of Week 3 |
 | Deployment | Netlify |
