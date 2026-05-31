@@ -17,7 +17,7 @@ The backend is responsible for:
 - Generating impact reports and exporting them as PDF or CSV
 - Serving the Transparency Dashboard with tamper-proof activity logs
 - Powering the Donor Dashboard with funded project visibility
-- Sending in-app and email notifications for task assignments and deadlines
+- Sending in-app notifications only for task assignments and deadlines
 
 ---
 
@@ -118,7 +118,7 @@ The backend exposes REST API endpoints across the following modules:
 | Attendance | `/api/attendance` | Log hours, view history, export |
 | Reports | `/api/reports` | KPI dashboard, PDF and CSV export |
 | Donors | `/api/donors` | Donor dashboard, funded project views |
-| Notifications | `/api/notifications` | In-app and email alerts |
+| Notifications | `/api/notifications` | In-app alerts |
 
 Full API documentation is maintained separately in the `syntraaid-docs` repository.
 
@@ -137,15 +137,19 @@ Full API documentation is maintained separately in the `syntraaid-docs` reposito
 
 ## MongoDB Collections
 
-Core collections in the database:
+The database contains eleven collections:
 
 - `users` — All user accounts and roles
-- `volunteers` — Volunteer profiles, skills, and availability
+- `volunteerProfiles` — Volunteer profiles, skills, and availability
 - `projects` — Projects with goals, milestones, and timelines
 - `tasks` — Tasks linked to projects and assigned to volunteers
-- `attendancelogs` — Individual attendance and hour entries
-- `activitylogs` — Tamper-proof record of all significant system events
-- `notifications` — In-app and email notification records
+- `attendanceLogs` — Individual attendance and hour entries
+- `activityLogs` — Tamper-proof record of all significant system events
+- `reports` — Generated impact reports and export records
+- `donorProjectLinks` — Links between donors and the projects they fund, with visibility settings
+- `notifications` — In-app notification records
+- `notificationPreferences` — Per-user notification preferences
+- `contactRequests` — Contact and request-access submissions from the public site
 
 ---
 
