@@ -1,4 +1,3 @@
-
 # SyntraAid API Documentation
 
 **Group 12 | Capstone 2026**
@@ -76,24 +75,23 @@ These endpoints handle registration, login, and password management. No token is
 
 ### POST /api/auth/register
 
-Registers a new user using a valid invite token. The invite token is sent by an admin before registration is possible.
+Registers a new user using a valid invite token. The invite token identifies the user record — the email address and role are looked up from the token, not supplied in the request body.
 
 **Access:** Public (invite token required)
 
 **Request Body:**
 
 ```json
-  {
+{
   "inviteToken": "uuid-invite-token-here",
   "password": "yourpassword"
 }
-
 ```
 
 | Field | Type | Required | Description |
 |---|---|---|---|
-| `password` | String | Yes | Will be hashed before storing. |
 | `inviteToken` | String | Yes | Single-use token sent by admin. Becomes null after use. |
+| `password` | String | Yes | Will be hashed before storing. |
 
 **Success Response — 201 Created:**
 
@@ -157,8 +155,6 @@ Logs in an existing user and returns a JWT token.
 
 ---
 
-
-
 ### POST /api/auth/forgot-password
 
 Sends a password reset link to the user's email address.
@@ -213,6 +209,29 @@ Resets the user's password using a valid reset token.
 | Status Code | Meaning |
 |---|---|
 | 400 | Invalid or expired reset token |
+
+---
+
+### GET /api/auth/invite/:token
+
+Validates an invite token and returns the email address and role associated with it. The registration page uses this to confirm the token is valid and to pre-fill the user's details before the password is set.
+
+**Access:** Public
+
+**Success Response — 200 OK:**
+
+```json
+{
+  "email": "newuser@example.com",
+  "role": "volunteer"
+}
+```
+
+**Error Responses:**
+
+| Status Code | Meaning |
+|---|---|
+| 400 | Invalid or expired invite token |
 
 ---
 
@@ -309,14 +328,11 @@ Admin creates an invite token and sends it to a new user's email address.
 | 400 | Missing fields or invalid role |
 | 409 | Email already registered |
 
-
 ---
 
----
 ### PATCH /api/users/:id/activate
 
-Activates or deactivates a user account. Pass `isActive: true` to activate 
-or `isActive: false` to deactivate.
+Activates or deactivates a user account. Pass `isActive: true` to activate or `isActive: false` to deactivate.
 
 **Access:** Admin only
 
@@ -349,17 +365,55 @@ or `isActive: false` to deactivate.
 
 ---
 
-### DELETE /api/users/:id
+### GET /api/users/:id/notification-preferences
 
-Soft deletes a user by setting the `deletedAt` field. The user record is not permanently removed.
+Returns the notification preferences for the specified user.
 
-**Access:** Admin only
+**Access:** The user themselves
 
 **Success Response — 200 OK:**
 
 ```json
 {
-  "message": "User deleted successfully"
+  "userId": "64f1a2b3c4d5e6f7a8b9c0d1",
+  "taskAssigned": true,
+  "deadlineReminder": true,
+  "taskBlocked": true,
+  "milestoneCompleted": true,
+  "preferredChannel": "in_app"
+}
+```
+
+---
+
+### PUT /api/users/:id/notification-preferences
+
+Updates notification preferences for the specified user.
+
+**Access:** The user themselves
+
+**Request Body:** Include only the fields you want to update.
+
+```json
+{
+  "deadlineReminder": false,
+  "preferredChannel": "in_app"
+}
+```
+
+| Field | Type | Description |
+|---|---|---|
+| `taskAssigned` | Boolean | Notify when a task is assigned |
+| `deadlineReminder` | Boolean | Notify before a task deadline |
+| `taskBlocked` | Boolean | Notify when a task is blocked |
+| `milestoneCompleted` | Boolean | Notify when a milestone is completed |
+| `preferredChannel` | String | Must be: `in_app` |
+
+**Success Response — 200 OK:**
+
+```json
+{
+  "message": "Notification preferences updated"
 }
 ```
 
@@ -935,7 +989,7 @@ Logs a new attendance record. This is an insert-only operation.
 | `volunteerId` | String | Yes | ID of the volunteer |
 | `projectId` | String | Yes | ID of the project |
 | `sessionDate` | Date | Yes | The date the session took place |
-| `hoursLogged` | Number | Yes | Must be greater than 0.1 |
+| `hoursLogged` | Number | Yes | Must be greater than 0 |
 | `notes` | String | No | Use for corrections referencing the original entry |
 
 **Success Response — 201 Created:**
@@ -955,6 +1009,26 @@ Logs a new attendance record. This is an insert-only operation.
 
 ---
 
+### GET /api/attendance/export
+
+Exports attendance records as a CSV or PDF file. Used by the admin attendance screen to download records for donor reporting.
+
+**Access:** Admin
+
+**Query Parameters:**
+
+| Parameter | Type | Description |
+|---|---|---|
+| `projectId` | String | Filter by project ID |
+| `dateRangeStart` | String | ISO 8601 date string |
+| `dateRangeEnd` | String | ISO 8601 date string |
+
+**Success Response — 200 OK:**
+
+Returns the generated file as a download.
+
+---
+
 ## 7. Activity Log Endpoints
 
 Base path: `/api/activity-logs`
@@ -967,7 +1041,7 @@ Activity logs are written by the system automatically. There is no endpoint to c
 
 Returns all activity log entries. Most recent entries are returned first.
 
-**Access:** Admin only
+**Access:** Admin, Coordinator
 
 **Query Parameters:**
 
@@ -1002,7 +1076,7 @@ Returns all activity log entries. Most recent entries are returned first.
 
 Returns a single activity log entry by ID.
 
-**Access:** Admin only
+**Access:** Admin, Coordinator
 
 **Success Response — 200 OK:**
 
@@ -1025,7 +1099,7 @@ Returns a single activity log entry by ID.
 
 Base path: `/api/notifications`
 
-These endpoints manage in-app notifications and user preferences.
+These endpoints manage in-app notifications. User notification preferences are managed under the [Users](#2-user-endpoints) section.
 
 ---
 
@@ -1082,60 +1156,6 @@ Marks all notifications as read for the currently logged-in user.
 ```json
 {
   "message": "All notifications marked as read"
-}
-```
-
----
-
-### GET /api/notifications/preferences
-
-Returns the notification preferences for the currently logged-in user.
-
-**Access:** All authenticated users
-
-**Success Response — 200 OK:**
-
-```json
-{
-  "userId": "64f1a2b3c4d5e6f7a8b9c0d1",
-  "taskAssigned": true,
-  "deadlineReminder": true,
-  "taskBlocked": true,
-  "milestoneCompleted": true,
-  "preferredChannel": "in_app"
-}
-```
-
----
-
-### PATCH /api/notifications/preferences
-
-Updates notification preferences for the currently logged-in user.
-
-**Access:** All authenticated users
-
-**Request Body:** Include only the fields you want to update.
-
-```json
-{
-  "deadlineReminder": false,
- "preferredChannel": "in_app"
-}
-```
-
-| Field | Type | Description |
-|---|---|---|
-| `taskAssigned` | Boolean | Notify when a task is assigned |
-| `deadlineReminder` | Boolean | Notify before a task deadline |
-| `taskBlocked` | Boolean | Notify when a task is blocked |
-| `milestoneCompleted` | Boolean | Notify when a milestone is completed |
-| `preferredChannel` | String | Must be one of: `in_app` |
-
-**Success Response — 200 OK:**
-
-```json
-{
-  "message": "Notification preferences updated"
 }
 ```
 
