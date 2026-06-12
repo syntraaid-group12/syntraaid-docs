@@ -1,0 +1,300 @@
+# Project Summary
+
+## Section 1: Project Overview
+
+SyntraAid is a transparency-focused NGO and volunteer management platform developed by Group 12 as part of the Capstone 2026 project.
+
+The platform is designed to help non-governmental organisations manage volunteers, coordinate projects, track attendance, monitor impact, and improve accountability through transparent reporting and donor visibility.
+
+SyntraAid provides a centralized system that enables administrators, coordinators, volunteers, and donors to collaborate effectively while maintaining visibility into project progress, volunteer contributions, attendance records, and organisational impact.
+
+The platform includes both web and mobile experiences, ensuring that project stakeholders can access important information and perform key actions from any device.
+
+## Section 2: The Problem It Solves
+
+Many NGOs rely on spreadsheets, paper records, messaging platforms, and disconnected systems to manage projects and volunteers. As organisations grow, these methods become difficult to maintain and often result in:
+
+* Limited visibility into project progress
+* Inefficient volunteer coordination
+* Difficulty tracking attendance and volunteer contributions
+* Delayed communication between stakeholders
+* Time-consuming donor reporting processes
+* Lack of accountability and transparency
+* Challenges measuring project impact
+
+SyntraAid addresses these challenges by providing a centralized platform for volunteer management, project coordination, attendance tracking, donor visibility, impact reporting, and transparency monitoring.
+
+By bringing these functions together into a single platform, organisations can improve operational efficiency while increasing stakeholder trust and accountability.
+
+## Section 3: Key Features
+
+### Volunteer Management
+
+* Volunteer registration and onboarding
+* Volunteer profile creation and management
+* Skills and availability tracking
+* Volunteer contribution monitoring
+* Participation history tracking
+* Volunteer recognition and badge system
+
+### Project Management
+
+* Project creation and management by administrators
+* Project assignment and coordination
+* Project status tracking
+* Project milestone monitoring
+* Team member management
+* Project activity tracking
+
+### Task Management
+
+* Task creation and assignment
+* Task status management
+* Priority management
+* Due date tracking
+* Task completion monitoring
+* Project task boards
+* Activity logging for task updates
+
+### Attendance and Contribution Tracking
+
+* Attendance logging
+* Volunteer hour tracking
+* Attendance history records
+* Contribution monitoring
+* Volunteer impact measurement
+
+### Transparency and Reporting
+
+* Transparency dashboard
+* Activity feeds
+* Impact summaries
+* KPI monitoring
+* Donor-ready reporting
+* PDF export functionality
+* CSV export functionality
+
+### Notifications
+
+* In-app notifications
+* Task assignment notifications
+* Deadline reminders
+* Coordinator alerts
+* Project update notifications
+* Notification preference management
+
+### Donor Visibility
+
+* Donor dashboard access
+* Funded project monitoring
+* Programme health indicators
+* Project impact summaries
+* Funding overview and reporting
+* Restricted donor visibility controls
+
+### Mobile Access
+
+* Mobile volunteer dashboard
+* Task management on mobile devices
+* Attendance logging on mobile
+* Volunteer profile management
+* Mobile notification access
+
+## Section 4: Tech Stack
+
+### Design
+
+* Figma
+
+### Frontend
+
+* HTML5
+* Tailwind CSS
+* Vanilla JavaScript
+* Fetch API
+
+### Mobile
+
+* React Native
+* React Navigation
+* React Context
+* Fetch API
+* Expo
+* EAS Build
+
+### Backend
+
+* Node.js
+* Express.js
+
+### Database
+
+* MongoDB Atlas
+
+### Version Control
+
+* Git
+* GitHub
+
+### Deployment
+
+* Netlify (Frontend)
+* Railway (Backend)
+
+## Section 5: User Roles
+
+### NGO Administrator
+
+The Administrator serves as the primary platform manager and oversees organisational operations.
+
+Responsibilities include:
+
+* Creating and managing projects
+* Monitoring platform-wide activities
+* Managing users and permissions
+* Reviewing reports and analytics
+* Monitoring transparency records
+* Managing donor visibility and accountability information
+* Overseeing organisation-wide performance metrics
+
+### Project Coordinator
+
+The Coordinator manages project execution and volunteer operations.
+
+Responsibilities include:
+
+* Managing assigned projects
+* Assigning volunteers to projects
+* Creating and managing project tasks
+* Monitoring task progress
+* Reviewing attendance submissions
+* Updating project milestones and status
+* Coordinating volunteer activities
+* Responding to project issues and blocked tasks
+
+### Volunteer
+
+Volunteers contribute to projects and track their participation through the platform.
+
+Responsibilities include:
+
+* Completing assigned tasks
+* Updating task status
+* Logging attendance and hours worked
+* Managing profile information
+* Selecting skills and availability
+* Viewing contribution summaries
+* Tracking participation history and achievements
+
+### Donor
+
+Donors use the platform to monitor funded programmes and project outcomes.
+
+Responsibilities include:
+
+* Viewing funded projects
+* Monitoring project progress
+* Reviewing impact summaries
+* Accessing programme health indicators
+* Viewing donor reports
+* Tracking outcomes of supported initiatives
+
+## Section 6: The Team
+
+### Product Management Team
+
+* Felix Ekechi
+* Adejumo Adeyemi
+* Genevieve Mmerigwo
+* Anams Ugochi Rejoice
+* Saratu Haruna
+* Irene Esi Nunoo
+* Adegoke Ayomide Elizabeth
+
+Responsible for:
+
+* Product research
+* User research
+* Product strategy
+* User stories
+* Product Requirements Documentation (PRD)
+* Feature prioritisation
+
+### Frontend Development Team
+
+* Kehinde Azeez
+* Fagbohun Adebusola
+* Adeniyi Ephraim Adekunle
+* Damife Odunukan
+* Fajumo Bisola
+* Peace Onaji
+
+Responsible for:
+
+* User interface implementation
+* Frontend application development
+* Responsive design implementation
+* User experience delivery
+
+### Backend Development Team
+
+* Michael Kayenty
+* Francis Chinazor
+* Ebubechukwu Jeff
+* Amobi Philip
+
+Responsible for:
+
+* API development
+* Business logic implementation
+* Database integration
+* Authentication and authorization
+* Data management
+
+### Mobile Development Team
+
+* Udoh Akpan Michael
+* Akinpelu Samuel Oluwarinu
+* Obiajulu Paschaline
+
+Responsible for:
+
+* Mobile application development
+* Mobile user experience implementation
+* Mobile attendance and task workflows
+
+### Technical Writers
+
+* Mercy
+* Tabitha Williams
+* Esther Joshua
+
+Responsible for:
+
+* User documentation
+* System documentation
+* User manuals
+* Project documentation
+* Capstone presentation documentation
+
+## Section 7: Deployment URLs
+
+### Frontend Application
+
+https://benevolent-concha-6e166e.netlify.app
+
+### Backend API
+
+https://syntraaid-backend-production.up.railway.app/api
+
+### GitHub Repository
+
+To be updated after final repository submission.
+
+### Figma Design Prototype
+
+To be updated after final design handoff.
+
+---
+
+SyntraAid was developed as a Capstone 2026 project to demonstrate how technology can improve transparency, accountability, volunteer management, project coordination, and donor confidence within non-governmental organisations.
