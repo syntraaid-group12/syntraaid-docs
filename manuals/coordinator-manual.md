@@ -1,206 +1,162 @@
-Coordinator User Manual
+# Coordinator User Manual
 
-Overview
+## Section 1: Your Role as a Coordinator
 
-The Coordinator role in SyntraAid is responsible for managing projects, assigning volunteers, tracking task progress, monitoring attendance records, and reviewing project activity.
+As a Coordinator, you are responsible for managing assigned projects, assigning volunteers, creating and managing tasks, monitoring project progress, and reviewing attendance records.
 
-The coordinator dashboard provides visibility into assigned projects, task progress, volunteer assignments, attendance records, and project progress.
-
----
-
-Coordinator Dashboard
-
-After logging in, the coordinator is taken to the dashboard.
-
-The dashboard displays:
-
-• Assigned projects
-• Task overview cards
-• Blocked tasks alert panel
-• Recent activity feed
-
-The dashboard is used to monitor project delivery and volunteer participation in real time.
+Your role helps ensure that projects are delivered successfully and that volunteers are assigned to the appropriate activities.
 
 ---
 
-Creating a Project
+## Section 2: Your Dashboard
 
-Coordinators can create and manage projects assigned to them.
+After logging in, you are taken to the Coordinator Dashboard.
 
-Steps
+The dashboard provides an overview of project and volunteer activity and displays:
 
-1. Open the Projects section
-2. Select Create Project
-3. Enter the project title
-4. Add project goals
-5. Define milestones
-6. Set the project timeline
-7. Save the project
+- Assigned Projects
+- Active Volunteers
+- Tasks Completed
+- Blocked Tasks
+- Projects by Status
+- Task Completion Tracker
+- Recent Activity
 
-After creation, the project appears on the coordinator dashboard.
+Use the dashboard to monitor project performance, volunteer participation, and task progress.
 
 ---
 
-Managing Project Status
+## Section 3: Creating a Project
 
-Projects move through defined status stages inside SyntraAid.
+Projects are created within SyntraAid and assigned to Coordinators for management.
+
+Once a project has been assigned, it becomes available in the Projects section where Coordinators can:
+
+- View project details
+- Monitor project progress
+- Manage project status
+- Assign volunteers
+- Create and manage tasks
+
+Assigned projects become available for day-to-day project coordination activities.
+
+---
+
+## Section 4: Managing Project Status
+
+Projects move through defined status stages within SyntraAid.
 
 Available statuses include:
 
-• Planning
-• Active
-• On Hold
-• Completed
-• Cancelled
+- Planning
+- Active
+- On Hold
+- Completed
+- Cancelled
 
-Coordinators can update project status from the project management section.
+To manage project status:
 
-Projects cannot move from Planning to Active unless a coordinator is assigned.
+1. Open the **Projects** section.
+2. Select a project.
+3. Review the current project status.
+4. Update the status as required.
+5. Save the changes.
+
+Projects cannot move from **Planning** to **Active** unless a Coordinator is assigned.
+
+Project information includes:
+
+- Project Name
+- Current Status
+- Task Completion Progress
+- Project Alerts
 
 ---
 
-Assigning Volunteers
+## Section 5: Assigning Volunteers
 
-Coordinators assign volunteers to projects using the searchable volunteer roster.
+Select **Volunteers** from the navigation menu to view available volunteers.
 
-Steps
+The Volunteers page allows Coordinators to identify volunteers using:
 
-1. Open a project
-2. Select Assign Volunteers
-3. Search volunteers by:
-   • skill
-   • availability
-4. Select the volunteer
-5. Confirm assignment
+- Name search
+- Skill filters
+- Availability information
+
+Volunteer profiles display:
+
+- Volunteer Name
+- Availability Schedule
+- Skills
+
+To assign volunteers:
+
+1. Open a project.
+2. Select **Assign Volunteers**.
+3. Search for a volunteer.
+4. Review the volunteer's skills and availability.
+5. Select the volunteer.
+6. Confirm the assignment.
 
 Assigned volunteers become visible within the project workspace.
 
-Volunteer profiles include:
-
-• Skills
-• Availability
-• Participation history
-• Contribution records
-
 ---
 
-Task Management
+## Section 6: Creating and Managing Tasks
 
-Coordinators create and assign tasks to volunteers.
+Tasks are managed through the Task Board.
+
+To create a task:
+
+1. Open the Task Board.
+2. Select **New Task**.
+3. Enter the task title.
+4. Enter a description.
+5. Select a project.
+6. Set a due date.
+7. Create the task.
 
 Each task includes:
 
-• Task title
-• Description
-• Due date
-• Assigned volunteer
-• Task status
+- Task Title
+- Description
+- Project
+- Due Date
+- Assigned Volunteer
+- Task Status
 
-Task Status Options
+Task status options include:
 
-• Not Started
-• In Progress
-• Blocked
-• Completed
+- Not Started
+- In Progress
+- Blocked
+- Completed
 
-Coordinators can monitor all task updates from the task board.
+The Task Board allows Coordinators to:
 
-Blocked tasks trigger coordinator notifications.
+- Create tasks
+- Assign volunteers to tasks
+- Monitor task progress
+- Identify blocked tasks
+- Track task completion
 
----
-
-Monitoring Task Progress
-
-The coordinator dashboard includes a real-time task board.
-
-The task board allows coordinators to:
-
-• View task progress
-• Monitor overdue tasks
-• Identify blocked tasks
-• Track milestone completion
-• Review volunteer updates
-
-Task status updates are reflected automatically across the project dashboard.
-
-Milestone completion updates as tasks are completed.
+Blocked tasks are displayed separately for easier monitoring.
 
 ---
 
-Attendance and Contribution Review
+## Section 7: Viewing and Verifying Attendance
 
-Attendance in SyntraAid is recorded against projects.
-
-Volunteers submit attendance entries by:
-
-• selecting a project
-• entering hours worked
-
-Coordinators review attendance records before project closure.
+Select **Attendance** from the navigation menu to review attendance records.
 
 Attendance information includes:
 
-• Volunteer name
-• Project name
-• Hours worked
-• Submission date
+- Volunteer Name
+- Project Name
+- Hours Worked
+- Submission Date
 
-Attendance totals contribute to volunteer contribution tracking and reporting.
+Coordinators review attendance records to verify volunteer participation and project contributions.
 
-Attendance records cannot be edited or deleted once submitted. If a volunteer submits an incorrect entry, the correction must be logged as a new attendance entry with a note referencing the original entry.
+Attendance records are used for project monitoring and contribution tracking.
 
----
-
-Transparency Dashboard
-
-The Transparency Dashboard provides visibility into project activity and contribution tracking.
-
-The dashboard includes:
-
-• Project progress feed
-• Contribution tracker
-• Activity log with timestamps
-• Volunteer impact summaries
-
-The activity log is tamper-proof and insert-only. Entries cannot be edited or deleted after creation.
-
----
-
-Notifications
-
-Coordinators receive notifications for:
-
-• Task assignments
-• Blocked tasks
-• Deadline reminders
-• Volunteer activity updates
-
-Notifications are available through the in-app notification system.
-
----
-
-Mobile Access
-
-Coordinators can access SyntraAid through their mobile browser using the responsive web application.
-
-Mobile access supports:
-
-• Viewing projects
-• Monitoring task progress
-• Reviewing volunteer activity
-• Updating project status
-• Checking attendance information
-• Receiving notifications
-
----
-
-Project Completion
-
-Before closing a project, coordinators should:
-
-• Review task completion
-• Review attendance records
-• Confirm milestone completion
-• Review volunteer contribution records
-
-Completed projects remain available for reporting and transparency tracking.
+Attendance records cannot be edited or deleted once submitted. If a correction is required, a new attendance entry must be submitted with a note referencing the original record.
